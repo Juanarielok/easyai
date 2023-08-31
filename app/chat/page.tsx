@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link';
 
 import './page.scss';
 
@@ -23,14 +23,16 @@ function App() {
           <button  className="boton-CHARLIE">Contact us</button>
 
     </div>
-   <div>   
+   <div>    <Link href="/">  
       <div className="TITULAZO">
+     
 
           <h4>AI Easy</h4>
 
           <h4 className="loguito">©</h4>
+          
 </div>
-
+</Link>
 <div className='chatbutons1'>
 <button className='buten'>Collaborative Resources</button> 
 <button className='buten2'> Academic Prompts </button> 

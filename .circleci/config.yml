@@ -1,0 +1,18 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.7
+jobs:
+  build-and-test:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - node/install:
+          node-version: "18.17.1"
+      - node/install-packages
+      - run:
+          command: npm test -- --watchAll=false --bail
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test

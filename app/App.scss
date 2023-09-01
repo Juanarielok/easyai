@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'roboto1'; 
-  src: url('roboto1.ttf') format('opentype'); 
+  src: url('fuentes/roboto1.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'roboto2'; 
-src: url('roboto2.ttf') format('opentype'); 
+src: url('fuentes/roboto2.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'trot'; 
-src: url('trot.ttf') format('opentype'); 
+src: url('fuentes/trot.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'ropa'; 
-src: url('ropa.ttf') format('opentype'); 
+src: url('fuentes/ropa.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'ropa2'; 
-src: url('ropa2.ttf') format('opentype'); 
+src: url('fuentes/ropa2.ttf') format('opentype'); 
 }
 
 
@@ -63,40 +63,40 @@ src: url('ropa2.ttf') format('opentype');
   width: 84px;
   height: 84px;
   outline: none;
-  background-image: url('logo1.png');
+  background-image: url('icons/logo1.png');
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
 
 .boton-1:hover {
-  background-image: url("logo1A.png");
+  background-image: url("icons/logo1A.png");
 }
 
 .boton-2 {
-  background-image: url('logo2.png');
+  background-image: url('icons/logo2.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo2A.png");
+      background-image: url("icons/logo2A.png");
   }
 }
 
 .boton-3 {
-  background-image: url('logo3.png');
+  background-image: url('icons/logo3.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo3A.png");
+      background-image: url("icons/logo3A.png");
   }
 }
 
 .boton-4 {
-  background-image: url('logo4.png');
+  background-image: url('icons/logo4.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo4A.png");
+      background-image: url("icons/logo4A.png");
   }
 }
 
@@ -153,7 +153,7 @@ src: url('ropa2.ttf') format('opentype');
 
 
 .App {
-  background-image: url('./101.jpg');
+  background-image: url('icons/101.jpg');
  
   background-size: cover;
   background-repeat: no-repeat;

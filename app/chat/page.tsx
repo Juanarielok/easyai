@@ -24,14 +24,7 @@ function Page() {
 
     </div>
    <div>    <Link href="/">  
-      <div className="TITULAZO">
-     
-
-          <h4>AI Easy</h4>
-
-          <h4 className="loguito">©</h4>
-          
-</div>
+    
 </Link>
 <div className='chatbutons1'>
 <button className='buten'>Collaborative Resources</button> 

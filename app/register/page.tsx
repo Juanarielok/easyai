@@ -19,15 +19,7 @@ function Page() {
     <div className="App">
    
    <div>   
-      <div className="TITULAZO">
-
-      <Link href="/">
-          <h4>AI Easy</h4>
-          </Link>
-
-          <h4 className="loguito">©</h4>
-</div>
-
+      
 
 
 

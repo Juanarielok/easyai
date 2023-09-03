@@ -3,15 +3,10 @@
     margin-top: 700px;
 }
 
-.body{
+body {
     background-image: url('/icons/101.jpg');
- 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 1000px;
-    display: flex; 
-    justify-content: center; 
-    background-attachment: fixed;
-
 }

@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'roboto1'; 
-    src: url('../fuentes/roboto1.ttf') format('opentype'); 
+    src: url('/fuentes/roboto1.ttf') format('opentype'); 
   }
   
   @font-face {
   font-family: 'roboto2'; 
-  src: url('../fuentes/roboto2.ttf') format('opentype'); 
+  src: url('/fuentes/roboto2.ttf') format('opentype'); 
   }
   
   @font-face {
   font-family: 'trot'; 
-  src: url('../fuentes/trot.ttf') format('opentype'); 
+  src: url('/fuentes/trot.ttf') format('opentype'); 
   }
   
   @font-face {
   font-family: 'ropa'; 
-  src: url('../fuentes/ropa.ttf') format('opentype'); 
+  src: url('/fuentes/ropa.ttf') format('opentype'); 
   }
   
   @font-face {
   font-family: 'ropa2'; 
-  src: url('../fuentes/ropa2.ttf') format('opentype'); 
+  src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
   
   
@@ -158,7 +158,7 @@
   
   
   .App {
-    background-image: url('../icons/101.jpg');
+    background-image: url('/icons/101.jpg');
    
     background-size: cover;
     background-repeat: no-repeat;

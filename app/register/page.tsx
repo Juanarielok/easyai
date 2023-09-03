@@ -4,7 +4,7 @@
 import './page.scss';
 import Link from 'next/link';
 import React, { useState } from 'react';
-function App() {
+function Page() {
 
  let [textito, settextito] = useState('');
 
@@ -66,4 +66,4 @@ function App() {
   );
 }
 
-export default App;
+export default Page;

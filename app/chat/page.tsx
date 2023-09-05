@@ -14,19 +14,19 @@ function Page() {
 
 
 
+
+
+  
+
+
+
   return (    
     
-    <div className="App">
-        <div className='INTERACTIVOS1'>
-    <button  className="boton-ALFA">Sign Up</button>
-          <button  className="boton-BETA">Log In</button>
-          <button  className="boton-CHARLIE">Contact us</button>
+    <div className="App1">
 
-    </div>
-   <div>    <Link href="/">  
-    
-</Link>
 <div className='chatbutons1'>
+
+
 <button className='buten'>Collaborative Resources</button> 
 <button className='buten2'> Academic Prompts </button> 
   </div>
@@ -37,39 +37,41 @@ function Page() {
   
 <button className='butin1'> Create Short Resume </button> 
 
+
+
+
+
+
+
   </div>
 
 
-        <div className="BARRABUSQUEDA">
-          
-
-<textarea  placeholder="What do you need today"  value={textito}  onChange={CAMBIARTEXTO}
-
-style={{ resize: 'none', width: '900px',height:'400px' }}
-
-className="custom-scrollbar"
-  />
-  
-{textito && (
-<button className="botonsito1">
-  <span role="img" aria-label="botonsito1">►</span>
-</button>
-)}
-</div>
+        
         
    
   
 
 
-     
+
+  <div className="BARRABUSQUEDACHAT">
+
+<input type="text" maxLength={80}  placeholder="How do I..."  value={textito}  onChange={CAMBIARTEXTO}
+  />
+  
+{textito && (
+<button className="botonsito2">
+  <span role="img" aria-label="botonsito2">▶</span>
+</button>
+)}
 
 
+</div>
  
    
 </div>
 
 
-</div>
+
    
   );
 }

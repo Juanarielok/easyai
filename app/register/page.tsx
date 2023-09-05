@@ -28,18 +28,14 @@ function Page() {
           
         <label  className='cartelin '> Email         </label>
 
-<input></input>
 
 
 
 
 </div>
   
-{textito && (
-<button className="botonsito1">
-  <span role="img" aria-label="botonsito1">►</span>
-</button>
-)}
+
+
 </div>
         
    

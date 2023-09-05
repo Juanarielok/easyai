@@ -1,50 +1,28 @@
 @font-face {
   font-family: 'roboto1'; 
-  src: url('roboto1.ttf') format('opentype'); 
+  src: url('/fuentes/roboto1.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'roboto2'; 
-src: url('roboto2.ttf') format('opentype'); 
+src: url('/fuentes/roboto2.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'trot'; 
-src: url('trot.ttf') format('opentype'); 
+src: url('/fuentes/trot.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'ropa'; 
-src: url('ropa.ttf') format('opentype'); 
+src: url('/fuentes/ropa.ttf') format('opentype'); 
 }
 
 @font-face {
 font-family: 'ropa2'; 
-src: url('ropa2.ttf') format('opentype'); 
+src: url('/fuentes/ropa2.ttf') format('opentype'); 
 }
 
-
-.TITULAZO {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #0410fd;
-  font-family: 'roboto1', sans-serif;
-  
-  font-weight: bolder;
-  font-size: 80px;
-  margin-top: 21px;
-  
-}
-
-.loguito {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  margin-top: -95px;
-  margin-left: 278px;
-}
 
 
 
@@ -53,7 +31,7 @@ src: url('ropa2.ttf') format('opentype');
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .boton-1,
@@ -63,40 +41,40 @@ src: url('ropa2.ttf') format('opentype');
   width: 84px;
   height: 84px;
   outline: none;
-  background-image: url('logo1.png');
+  background-image: url('/icons/logo1.png');
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
 
 .boton-1:hover {
-  background-image: url("logo1A.png");
+  background-image: url("/icons/logo1A.png");
 }
 
 .boton-2 {
-  background-image: url('logo2.png');
+  background-image: url('/icons/logo2.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo2A.png");
+      background-image: url("/icons/logo2A.png");
   }
 }
 
 .boton-3 {
-  background-image: url('logo3.png');
+  background-image: url('/icons/logo3.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo3A.png");
+      background-image: url("/icons/logo3A.png");
   }
 }
 
 .boton-4 {
-  background-image: url('logo4.png');
+  background-image: url('/icons/logo4.png');
   margin-left: 30px;
   
   &:hover {
-      background-image: url("logo4A.png");
+      background-image: url("/icons/logo4A.png");
   }
 }
 
@@ -105,20 +83,24 @@ src: url('ropa2.ttf') format('opentype');
   text-align: left; 
   align-items: center;
   margin-top: 90px;
-  border: 1px solid  #0410fd;
+  color: #000000;
+  border: none;
   border-radius: 22px;
   height: 60px;
   align-items: center;
   background-color: transparent;
   font-family:'roboto1';
   width: 450px;
+  margin-bottom: 280px;
+
   
   *:focus {
     outline: none; 
+    
    }
    
   &::placeholder  {
-      color: #0410fd;
+    color: #000000;
       font-size: 20px;
       align-items: center;
       justify-content: center;
@@ -133,7 +115,7 @@ src: url('ropa2.ttf') format('opentype');
  
      &::placeholder {
           opacity: 0.35;
-          color: #0e1aff;
+          color: #000000;
       }
 }
 
@@ -143,32 +125,26 @@ src: url('ropa2.ttf') format('opentype');
     font-weight:bolder;
     font-size: 22px;
     font-family:'roboto1', sans-serif;
-    color: #0410fd;
+    color: #000000;
     justify-content: center;
     align-items: center;
     padding-left: 25px;
 
   }
+
+  
 }
 
 
-.App {
-  background-image: url('./101.jpg');
- 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 1000px;
-  display: flex; 
-  justify-content: center; 
-  background-attachment: fixed;
+
+.link1{
+
+  color: transparent;
 }
-
-
 
 
 .INTERACTIVOS1{
-font-size: 20px;
+
   top:20px;
   right:25px;
   flex-direction: column;
@@ -180,16 +156,16 @@ position: absolute;
 .boton-ALFA, .boton-BETA, .boton-CHARLIE {
     font-weight:650;
   background-color: transparent; 
-
+  font-size: 20px;
   border: none;
   font-family:'roboto1', sans-serif;
-  color: #0410fd;
+  color: #000000;
   display: flex;
   
   &:hover {
       font-family:'roboto2', sans-serif;
       font-weight: bolder; 
-      color: #1c27fc;
+      color: #000000;
       cursor: pointer;
      
     }
@@ -201,28 +177,31 @@ position: absolute;
   margin-top: 8px; 
 }
 
+
+
 .botonsito1 {
   display: flex;
   background: none;
   border: none;
-  color: #0410fd;
+  color: #000000;
   cursor: pointer;
   font-size: 20px;
-  margin-top:-45px;
+margin-top: -323px;
    margin-left: 412px;
+   margin-bottom: 295px;
   
 }
 
+
 .dandolastima{
-margin-top: 270px;
-font-size: 15px;
-}
+ 
+  font-size: 15px;
+  color: #000000;
+  border: none; 
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+ text-shadow: none;
+ 
+  }
 
-.copyrightcheto{
-  color: #0410fd;
-  margin-top: 70px;
-  margin-right: 1500px;
-display: flex;
-font-size: 13px;
-
-}

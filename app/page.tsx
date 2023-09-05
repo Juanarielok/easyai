@@ -20,7 +20,7 @@ function App() {
         <div className='INTERACTIVOS1'> <Link href="/register"> 
     <button  className="boton-ALFA">Sign Up</button>
     </Link>
-          <button  className="boton-BETA">Log In</button>
+          <button  className="boton-BETA">Log In</button> 
           <button  className="boton-CHARLIE">Contact us</button>
 
     </div>

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import './page.scss';
-import Botonerachat from 'components/user_menu/botonerachat'
+import Botonerachat from '../../components/user_menu/botonerachat'
 import React, { useState } from 'react';
 function Page() {
 

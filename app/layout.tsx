@@ -1,7 +1,10 @@
 'use client'
-import Link from 'next/link'
+
 import './layout.scss'
 import Menu from '../components/user_menu/menu'
+import Logo from '../components/user_menu/logo'
+import Footer from '../components/user_menu/footer'
+import Link from 'next/link'
 export default function RootLayout({
   children,
 }: {
@@ -9,6 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    
       <head>
         <title>
           Easy AI
@@ -16,25 +20,15 @@ export default function RootLayout({
       </head>
       <body>
 
-        <div className="TITULAZO">
-
-          <Link className='trans' href="/">
-            <h4 className='logo1'>AI Easy</h4>
-          </Link>
-
-          <h4 className="loguito">©</h4>
-
-        </div>
-
         <Menu />
+        <Logo/>
 
         {children}
 
-        <button className="copyrightcheto">
-          Copyright 2023 AI Easy ©
-        </button>
+        <Footer/>
 
       </body>
+
     </html>
   )
 }

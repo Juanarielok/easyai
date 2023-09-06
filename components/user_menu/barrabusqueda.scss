@@ -22,27 +22,26 @@
   font-family: 'ropa2'; 
   src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
-  
-  
-  
-  .BARRABUSQUEDACHAT input {
+
+
+
+
+.BARRABUSQUEDA input {
     display: flex;
     text-align: left; 
     align-items: center;
-    margin-top: 90px;
-    margin: 0 auto;
     color: #000000;
-    border: none;
+    border: 1px solid #000;
     border-radius: 22px;
-    height: 120px;
+    height: 50px;
     align-items: center;
     background-color: transparent;
     font-family:'roboto1';
-    width: 850px;
-    margin-bottom: 289px;
-    max-height: 200px;
-    resize: vertical;
-    overflow-y: auto;
+    width: 450px;
+    margin:0 auto;
+   
+  
+    
     *:focus {
       outline: none; 
       
@@ -50,13 +49,12 @@
      
     &::placeholder  {
       color: #000000;
-        font-size: 20px;
+        font-size: 14px;
         align-items: center;
         justify-content: center;
         opacity: 0.6;
         font-family: 'roboto1', sans-serif;
         margin-left: 200px;
-        font-size: 15px;
     }
     
    &:focus {
@@ -73,7 +71,7 @@
   
    &[value] {
       font-weight:bolder;
-      font-size: 15px;
+      font-size: 16px;
       font-family:'roboto1', sans-serif;
       color: #000000;
       justify-content: center;
@@ -85,16 +83,23 @@
     
   }
   
-  .botonsito2{
+  
+  
+  
+  
+  
+  
+  .botonsito1 {
     display: flex;
     background: none;
     border: none;
     color: #000000;
     cursor: pointer;
     font-size: 20px;
-  margin-top: -323px;
-     margin-left: 1212px;
-     margin-bottom: 295px;
-    
 
+     margin-left: 870px;
+    
+    
   }
+  
+  

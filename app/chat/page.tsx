@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import './page.scss';
-
+import Botonerachat from '../../components/user_menu/botonerachat'
 import React, { useState } from 'react';
 function Page() {
 
@@ -24,18 +24,9 @@ function Page() {
     
     <div className="App1">
 
-<div className='chatbutons1'>
 
-
-<button className='buten'>Collaborative Resources</button> 
-<button className='buten2'> Academic Prompts </button> 
-  </div>
-
-  <div className='chatbutons2'>
-
-  <button className='butin'> Custom Summarize  </button> 
-  
-<button className='butin1'> Create Short Resume </button> 
+ 
+ <Botonerachat/>
 
 
 
@@ -43,7 +34,8 @@ function Page() {
 
 
 
-  </div>
+
+ 
 
 
         

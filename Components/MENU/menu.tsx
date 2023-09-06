@@ -1,12 +1,9 @@
 'use client'
+
 import Link from "next/link";
+import './menu.scss';
 
-
-export default function menu(){
-
-
-
-
+export default function menu() {
 
 return(  
 

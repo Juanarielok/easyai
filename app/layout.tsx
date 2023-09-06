@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import './layout.scss'
-import Menu from '../Components/MENU/menu'
+import Menu from '../components/menu/menu'
 export default function RootLayout({
   children,
 }: {

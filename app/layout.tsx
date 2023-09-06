@@ -11,31 +11,29 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>
-            Easy AI
+          Easy AI
         </title>
       </head>
       <body>
 
-      <Menu />
-   
+        <div className="TITULAZO">
 
-      <div className="TITULAZO">
+          <Link className='trans' href="/">
+            <h4 className='logo1'>AI Easy</h4>
+          </Link>
 
-<Link className='trans' href="/">
-    <h4 className='logo1'>AI Easy</h4>
-    </Link>
+          <h4 className="loguito">©</h4>
 
-    <h4 className="loguito">©</h4>
-</div>
+        </div>
 
-
-
-
-
-
+        <Menu />
 
         {children}
-        <button className="copyrightcheto"> Copyright 2023 AI Easy © </button>
+
+        <button className="copyrightcheto">
+          Copyright 2023 AI Easy ©
+        </button>
+
       </body>
     </html>
   )

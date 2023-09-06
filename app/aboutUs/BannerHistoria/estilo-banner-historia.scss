@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'roboto1';
+    src: url('/fuentes/roboto1.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'roboto2';
+    src: url('/fuentes/roboto2.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'trot';
+    src: url('/fuentes/trot.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa';
+    src: url('/fuentes/ropa.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa2';
+    src: url('/fuentes/ropa2.ttf') format('opentype');
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: inherit;
+    box-sizing: border-box;
+    height: auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(15%);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.principal div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 50%;
+    border-radius: 30px;
+    justify-content: space-evenly;
+}
+
+.principal div:nth-child(odd) {
+    align-self: flex-start;
+    background-color: rgb(0, 128, 0, 0.2);
+}
+
+.principal div:nth-child(even) {
+    align-self: flex-end;
+    background-color: rgb(23, 195, 101, 0.2)
+}

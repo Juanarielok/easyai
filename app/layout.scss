@@ -1,76 +1,3 @@
-@font-face {
-    font-family: 'roboto1'; 
-    src: url('/fuentes/roboto1.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'roboto2'; 
-  src: url('/fuentes/roboto2.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'trot'; 
-  src: url('/fuentes/trot.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'ropa'; 
-  src: url('/fuentes/ropa.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'ropa2'; 
-  src: url('/fuentes/ropa2.ttf') format('opentype'); 
-  }
-  
-  
-  .TITULAZO {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #000000;
-    font-family: 'roboto1', sans-serif;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 40px;
-  margin-bottom: 80px;
-    outline: none;
-    .loguito {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      font-size: 15px;
-      margin-top: -97px;
-      text-decoration: none;
-      margin-left: 145px;
-    }
-    .logo1{
-      color: #000000;
-      margin-top: 50px;
-      font-family: 'roboto1', sans-serif;
-      outline: none; 
-      text-decoration: none;
-      outline: none;
-  }
-  .trans{
-
-    color:transparent;
-   }
-   
-
-  }
-  
-.link1 {
-
-  color:transparent;
- }
- 
-
-
-
-
-
 body {
     background-image: url('/icons/101.jpg');
     background-size: cover;
@@ -78,8 +5,6 @@ body {
     background-position: center;
     min-height: 100vh;
     margin: 0;
-
-    
 }
 
 
@@ -91,18 +16,3 @@ body {
  
   
   
-
-  .copyrightcheto{
-    font-size: 12px;
-     margin-top: -130px;
-     margin-right: 1500px;
-     margin-left: 20px;
-     font-family:'roboto2', sans-serif;
-     width: 70px;
-   display: flex;
-   color: black;
-   background: transparent;
-   border: none; 
-   cursor: pointer;
-   white-space: nowrap;
- }

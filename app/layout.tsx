@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import './layout.scss'
-
+import Menu from '../Components/MENU/menu'
 export default function RootLayout({
   children,
 }: {
@@ -16,21 +16,7 @@ export default function RootLayout({
       </head>
       <body>
 
-      <div className='INTERACTIVOS1'>
-    <Link className='link1' href="/register"> 
-    <label  className="boton-ALFA">Sign Up</label>
-    </Link >
-
-    
-       <Link className='link1' href="/register"> 
-       <label  className="boton-BETA">Log In</label>
-      </Link >
-
-     <Link className='link1' href="/register"> 
-     <label  className="boton-CHARLIE">Contact us </label>
-      </Link >
-
-    </div>
+      <Menu />
    
 
       <div className="TITULAZO">

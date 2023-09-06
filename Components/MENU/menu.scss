@@ -27,7 +27,7 @@ src: url('/fuentes/ropa2.ttf') format('opentype');
 .INTERACTIVOS1{
   font-size: 15px;
     top:20px;
-    right:25px;
+    right:5px;
     width: 100px;
   
     flex-direction: column;
@@ -37,6 +37,7 @@ src: url('/fuentes/ropa2.ttf') format('opentype');
     font-weight:650;
     display: inline-block;
 margin-top: 1px;
+font-size: 15px;
   border: none;
   font-family:'roboto1', sans-serif;
   color: #000000;

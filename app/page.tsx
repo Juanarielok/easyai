@@ -47,7 +47,7 @@ function App() {
 
 </div>
 <Link className='link1'  href='https://www.paypal.com/ar/home?locale.x=es_AR'>     
-<button className='dandolastima'>Want to help us? Consider  d͟o͟n͟a͟t͟i͟n͟g͟ !</button>
+<button className='dandolastima'>Want to help us? Consider d͟o͟n͟a͟t͟i͟n͟g͟ !</button>
 </Link>
 
         </div>

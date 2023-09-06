@@ -23,7 +23,11 @@
   src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
 
-
+.BARRABUSQUEDA {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
 
 
 .BARRABUSQUEDA input {
@@ -37,8 +41,8 @@
     align-items: center;
     background-color: transparent;
     font-family:'roboto1';
-    width: 450px;
-    margin:0 auto;
+    width: 100%;
+    box-sizing: border-box;
    
   
     
@@ -99,6 +103,9 @@
 
      margin-left: 870px;
     
+     position: absolute;
+     right: 5px;
+     top: 8px;
     
   }
   

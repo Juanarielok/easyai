@@ -30,6 +30,11 @@
   min-height: 100vh;
 }
 
+h1 {
+  font-weight: light;
+  font-family: 'roboto1', sans-serif;
+}
+
 .custom-scrollbar {
   scrollbar-color: transparent transparent rgba(0, 0, 255, 0);
 }

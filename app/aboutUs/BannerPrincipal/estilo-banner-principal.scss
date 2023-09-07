@@ -23,15 +23,12 @@
     src: url('/fuentes/ropa2.ttf') format('opentype');
 }
 
-h1 {
-    color: white;
-    font-size: 30px;
-    font-family: 'roboto1', sans-serif;
-}
+
 
 .parrafo {
     color: white;
     font-size: 20px;
+    font-weight: 900;
     font-family: 'roboto1', sans-serif;
 
 }
@@ -41,6 +38,7 @@ h1 {
 .info {
     padding: 10%;
     max-height: 400px;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 50vw;
     background-size: cover;

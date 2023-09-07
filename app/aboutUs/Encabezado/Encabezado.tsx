@@ -9,7 +9,7 @@ function Encabezado() {
     useEffect(() => {
         const handleScroll = () => {
             const position = window.pageYOffset;
-            if (position > 50) { //Si cambia el flexbox debajo del encabezado, ajuste la posición a la altura de este.
+            if (position > 80) { //Si cambia el flexbox debajo del encabezado, ajuste la posición a la altura de este.
                 setScrolled(true);
             }
             else {

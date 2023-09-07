@@ -12,8 +12,6 @@ function App() {
     <div className="App">
       <Encabezado />
       <BannerPrincipal />
-      <div className='hola1'></div>
-      <div className='hola2'></div>
       <BannerHistoria />
     </div>
   )

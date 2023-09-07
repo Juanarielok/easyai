@@ -24,10 +24,10 @@
 }
 
 .principal {
+    position: inherit;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: inherit;
     box-sizing: border-box;
     height: auto;
     width: 70%;
@@ -39,20 +39,61 @@
 
 .principal div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
+    flex-direction: column;
+    height: auto;
     width: 50%;
+    box-sizing: border-box;
     border-radius: 30px;
-    justify-content: space-evenly;
+    padding: 20px;
+    justify-content: stretch;
+    font-family: 'roboto1', sans-serif;
+
 }
 
 .principal div:nth-child(odd) {
+    font-size: 120%;
     align-self: flex-start;
     background-color: rgb(0, 128, 0, 0.2);
+    transition: transform ease-in-out 1s;
+
+
+    &:hover {
+        transform: rotate(5deg);
+        background-color: rgb(0, 128, 0, 0.3);
+    }
+}
+
+.principal div:hover:nth-child(odd) p,
+.principal div:hover:nth-child(odd) h1 {
+    transform: rotate(-5deg);
+    transition: transform ease-in-out 1s;
 }
 
 .principal div:nth-child(even) {
+    display: inherit;
     align-self: flex-end;
-    background-color: rgb(23, 195, 101, 0.2)
+    background-color: rgb(23, 195, 101, 0.2);
+    transition: transform ease-in-out(3s);
+
+    &:hover {
+        transform: rotate(-3deg);
+        background-color: rgb(23, 195, 101, 0.3);
+    }
+
+    .lista {
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+}
+
+.principal div:hover:nth-child(even) li,
+.principal div:hover:nth-child(even) h1 {
+    transform: rotate(5deg);
+    transition: transform ease-in-out 1s;
+}
+
+.principal div:nth-child(2) li {
+    font-size: 120%;
+    margin-bottom: 20px;
 }

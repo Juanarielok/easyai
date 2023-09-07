@@ -2,9 +2,9 @@
 
 
 
-import Donacion from '../components/user_menu/donacion'
-import Barrabusqueda from '../components/user_menu/barrabusqueda'
-import Botonsitos from '../components/user_menu/botonsitos'
+
+import Barrabusqueda from '../components/user_menu/barrabusqueda/barrabusqueda'
+import Botonsitos from '../components/user_menu/botonsitos/botonsitos'
 import React, { useState } from 'react';
 
 function App() {

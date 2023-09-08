@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'roboto1';
+  src: url('/fuentes/roboto1.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'roboto2';
+  src: url('/fuentes/roboto2.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'trot';
+  src: url('/fuentes/trot.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ropa';
+  src: url('/fuentes/ropa.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ropa2';
+  src: url('/fuentes/ropa2.ttf') format('opentype');
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.custom-scrollbar {
+  scrollbar-color: transparent transparent rgba(0, 0, 255, 0);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 40px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}

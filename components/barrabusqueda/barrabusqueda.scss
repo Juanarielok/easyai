@@ -1,3 +1,5 @@
+@import 'app/variable.scss';
+
 @font-face {
     font-family: 'roboto1'; 
     src: url('/fuentes/roboto1.ttf') format('opentype'); 
@@ -23,22 +25,26 @@
   src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
 
-
+.BARRABUSQUEDA {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
 
 
 .BARRABUSQUEDA input {
     display: flex;
     text-align: left; 
     align-items: center;
-    color: #000000;
-    border: 1px solid #000;
+    color: $color-letra;
+    border: 1px solid $color-letra;
     border-radius: 22px;
     height: 50px;
     align-items: center;
     background-color: transparent;
     font-family:'roboto1';
-    width: 450px;
-    margin:0 auto;
+    width: 100%;
+    box-sizing: border-box;
    
   
     
@@ -48,7 +54,7 @@
      }
      
     &::placeholder  {
-      color: #000000;
+      color: $color-letra;
         font-size: 14px;
         align-items: center;
         justify-content: center;
@@ -63,7 +69,7 @@
    
        &::placeholder {
             opacity: 0.35;
-            color: #000000;
+            color: $color-letra;
         }
   }
   
@@ -73,7 +79,7 @@
       font-weight:bolder;
       font-size: 16px;
       font-family:'roboto1', sans-serif;
-      color: #000000;
+      color: $color-letra;
       justify-content: center;
       align-items: center;
       padding-left: 25px;
@@ -93,12 +99,15 @@
     display: flex;
     background: none;
     border: none;
-    color: #000000;
+    color: $color-letra;
     cursor: pointer;
     font-size: 20px;
 
      margin-left: 870px;
     
+     position: absolute;
+     right: 5px;
+     top: 8px;
     
   }
   

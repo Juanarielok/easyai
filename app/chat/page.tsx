@@ -1,70 +1,54 @@
 'use client'
-
-import './page.scss';
-import Botonerachat from '@/components/user_menu/botonerachat/botonerachat'
 import React, { useState } from 'react';
+import './page.scss';
+import Footer from '../../components/footer/footer';
+import Botonerachat from '../../components/botonerachat/botonerachat';
+import Mensajechat from '@/components/mensajechat/mensajechat';
 
 function Page() {
+  const [textito, setTextito] = useState('');
+  const [messages, setMessages] = useState<string[]>([]);
 
- let [textito, settextito] = useState('');
+  function handleEnviarClick() {
 
- function CAMBIARTEXTO (evento:any){
-    settextito(evento.target.value);
-  };
+    if (textito.trim() !== '') {
 
+      setMessages([...messages, textito]);
 
+      setTextito('');
+    }
+  }
 
-
-
-  
-
-
-
-  return (    
-    
+  return (
     <div className="App1">
 
-
- 
- <Botonerachat/>
+      <Botonerachat />
 
 
+      <div>
+        {messages.map((message, index) => (
 
 
+          <Mensajechat key={index} mensaje={message} />
 
 
+        ))}
+      </div>
 
-
- 
-
-
-        
-        
-   
-  
-
-
-
-  <div className="BARRABUSQUEDACHAT">
-
-<input type="text" maxLength={80}  placeholder="How do I..."  value={textito}  onChange={CAMBIARTEXTO}
-  />
-  
-{textito && (
-<button className="botonsito2">
-  <span role="img" aria-label="botonsito2">▶</span>
-</button>
-)}
-
-
-</div>
- 
-   
-</div>
-
-
-
-   
+      <div className="BARRABUSQUEDACHAT">
+        <input
+          type="text"
+          maxLength={80}
+          placeholder="How do I..."
+          value={textito}
+          onChange={(evento) => setTextito(evento.target.value)}
+        />
+        <button className="botonsito2" onClick={handleEnviarClick}>
+          Send
+        </button>
+      </div>
+      <Footer mostrarDonacion={false} />
+    </div>
   );
 }
 

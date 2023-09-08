@@ -1,3 +1,5 @@
+@import 'app/variable.scss';
+
 
 .copyrightcheto{
     font-size: 12px;
@@ -6,9 +8,11 @@
      font-family:'roboto2', sans-serif;
      width: 70px;
    display: flex;
-   color: black;
+   color: $color-letra;
    background: transparent;
    border: none; 
    cursor: pointer;
    white-space: nowrap;
+
+   margin: 0 0 5px 5px;
  }

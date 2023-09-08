@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'roboto1'; 
+    src: url('/fuentes/roboto1.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'roboto2'; 
+  src: url('/fuentes/roboto2.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'trot'; 
+  src: url('/fuentes/trot.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa'; 
+  src: url('/fuentes/ropa.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa2'; 
+  src: url('/fuentes/ropa2.ttf') format('opentype'); 
+  }
+  
+
+
+
+.mensajecontenedor{
+
+    width: 400px;
+    
+background-color: #D089B3;
+margin: auto;
+border-radius: 9px;
+word-wrap: break-word;
+margin-bottom: 16px;
+  overflow-y: auto;
+  overflow-x: auto;
+height: auto;
+height: -20px;
+.contenidomensajeAI{
+    position:relative;
+
+
+font-weight: bolder;
+font-family: 'roboto1';
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+}
+

@@ -8,9 +8,6 @@ function Page() {
 
  let [textito, settextito] = useState('');
 
- function CAMBIARTEXTO (evento:any){
-    settextito(evento.target.value);
-  };
 
 
 

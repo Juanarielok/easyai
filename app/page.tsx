@@ -1,46 +1,44 @@
 'use client'
 
-
-
-
-import Barrabusqueda from '../components/user_menu/barrabusqueda/barrabusqueda'
-import Botonsitos from '../components/user_menu/botonsitos/botonsitos'
-import React, { useState } from 'react';
+import Footer from '../components/footer/footer';
+import Barrabusqueda from '../components/barrabusqueda/barrabusqueda'
+import Botonsitos from '../components/botonsitos/botonsitos'
+import React from 'react';
+import './page.scss';
 
 function App() {
 
 
-  return (    
-    
- <div className="App">
-   
-     
-     
-  <Botonsitos/>
-         
+  return (
+
+    <div className="App">
 
 
-  <Barrabusqueda/>
+
+      <Botonsitos />
 
 
-  
+
+      <Barrabusqueda />
 
 
- </div>
-   
-  
+      <div className='footer-app'>
+        <Footer mostrarDonacion={true} />
+      </div>
 
 
-       
+
+    </div>
 
 
- 
-   
-
-       
 
 
-   
+
+
+
+
+
+
   );
 }
 

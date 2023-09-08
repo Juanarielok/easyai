@@ -17,6 +17,10 @@ return(
        <label  className="boton-BETA">Log In</label>
       </Link >
 
+      <Link className="link1" href="/aboutUs">
+        <label className="boton-About-Us">About Us</label>
+      </Link>
+
      <Link className='link1' href="/register"> 
      <label  className="boton-CHARLIE">Contact us </label>
       </Link >

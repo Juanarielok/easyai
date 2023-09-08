@@ -1,3 +1,5 @@
+@import 'app/variable.scss';
+
 @font-face {
     font-family: 'roboto1'; 
     src: url('/fuentes/roboto1.ttf') format('opentype'); 
@@ -22,19 +24,31 @@
   font-family: 'ropa2'; 
   src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
-  
-  
- 
 
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 345px; 
+    margin: auto;
+    margin-top:100px;
+  }
   
-  .BARRAemail {
-    margin-top: 190px;
+  .columna {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   
-  .cartelin {
-    margin-bottom: 5px;
-    margin-right: 176px;
+  .boton {
+    border: 1px solid #00000000;
+    color: $color-letra;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: "roboto2";
+    margin: 5px; 
+    background-color:transparent;
+    cursor:pointer;
   }
+  

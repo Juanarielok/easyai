@@ -1,0 +1,69 @@
+@import 'app/variable.scss';
+  
+  @font-face {
+     font-family: 'roboto1';
+     src: url('/fuentes/roboto1.ttf') format('opentype');
+   }
+
+   @font-face {
+     font-family: 'roboto2';
+     src: url('/fuentes/roboto2.ttf') format('opentype');
+   }
+
+   @font-face {
+     font-family: 'trot';
+     src: url('/fuentes/trot.ttf') format('opentype');
+   }
+
+   @font-face {
+     font-family: 'ropa';
+     src: url('/fuentes/ropa.ttf') format('opentype');
+   }
+
+   @font-face {
+     font-family: 'ropa2';
+     src: url('/fuentes/ropa2.ttf') format('opentype');
+   }
+
+   .loguito {
+     display: inline;
+     color: $color-letra;
+     font-family: 'roboto1', sans-serif;
+     text-decoration: none;
+     font-weight: bolder;
+     font-size: 40px;
+
+     outline: none;
+
+     font-size: 15px;
+     margin-top: 11px;
+   }
+
+   .logo1 {
+ 
+    
+     display: inline;
+     font-weight: bolder;
+     font-size: 30px;
+     color: $color-letra;
+     margin-top: 50px;
+     font-family: 'roboto2', sans-serif;
+     outline: none;
+     text-decoration: none;
+     outline: none;
+     text-shadow: 2px 2px red;
+   }
+
+   .trans {
+
+     color: transparent;
+width: 120px;
+margin: auto;
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+   }
+
+   

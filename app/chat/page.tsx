@@ -1,9 +1,9 @@
 'use client'
-import Link from 'next/link';
 
 import './page.scss';
-import Botonerachat from '../../components/user_menu/botonerachat'
+import Botonerachat from '@/components/user_menu/botonerachat/botonerachat'
 import React, { useState } from 'react';
+
 function Page() {
 
  let [textito, settextito] = useState('');

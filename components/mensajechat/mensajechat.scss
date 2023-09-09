@@ -26,31 +26,38 @@
   
 
 
+  .mensajecontenedorAI,
+.mensajecontenedor {
 
-.mensajecontenedor{
 
-    width: 400px;
-    
-background-color: #D089B3;
+  
+  width:400px ;
+background-color: #ffffff; 
 margin: auto;
 border-radius: 9px;
 word-wrap: break-word;
 margin-bottom: 16px;
   overflow-y: auto;
   overflow-x: auto;
+ 
 height: auto;
 height: -20px;
+
+
 .contenidomensajeAI{
     position:relative;
 
 
 font-weight: bolder;
 font-family: 'roboto1';
-    color: rgb(255, 255, 255);
+    color: #000000;
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 2px;
     margin-bottom: 5px;
 }
-}
 
+}
+.mensajecontenedorAI {
+  background-color:rgb(188, 238, 245);
+  }

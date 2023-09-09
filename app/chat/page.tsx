@@ -4,20 +4,37 @@ import './page.scss';
 import Footer from '../../components/footer/footer';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
+import Mensaje from '@/models/mensaje';
+import VerIArespuesta  from '@/services/conexion';
 
 function Page() {
   const [textito, setTextito] = useState('');
-  const [messages, setMessages] = useState<string[]>([]);
+  const [messages, setMessages] = useState<Mensaje[]>([]);
 
-  function handleEnviarClick() {
+  function ENVIARMENSAJE() {
 
-    if (textito.trim() !== '') {
+    let mensajeHUMANO : Mensaje = { 
 
-      setMessages([...messages, textito]);
+      esRespuestaIA : false ,
+  
+      mensaje : textito
+  } ;
 
-      setTextito('');
-    }
-  }
+  
+  
+ 
+  setTextito('');
+  recibirRespuestaIA(mensajeHUMANO);
+}
+
+
+function recibirRespuestaIA (mensajehumano:Mensaje) {
+
+  let mensajeARTIFICIAL : Mensaje = VerIArespuesta();
+  setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
+
+}
+
 
   return (
     <div className="App1">
@@ -29,7 +46,7 @@ function Page() {
         {messages.map((message, index) => (
 
 
-          <Mensajechat key={index} mensaje={message} />
+          <Mensajechat key={index} mensaje1={message} />
 
 
         ))}
@@ -43,7 +60,7 @@ function Page() {
           value={textito}
           onChange={(evento) => setTextito(evento.target.value)}
         />
-        <button className="botonsito2" onClick={handleEnviarClick}>
+        <button className="botonsito2" onClick={ENVIARMENSAJE}>
           Send
         </button>
       </div>

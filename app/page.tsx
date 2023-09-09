@@ -12,13 +12,6 @@ function App() {
   return (
 
     <div className="App">
-<<<<<<< HEAD
-        <div className='INTERACTIVOS1'> <Link href="/register"> 
-    <button  className="boton-ALFA">Sign Up</button>
-    </Link>
-          <button  className="boton-BETA">Log In</button> 
-          <button  className="boton-CHARLIE">Contact us</button>
-=======
 
 
 
@@ -34,7 +27,6 @@ function App() {
       </div>
 
 
->>>>>>> a9c40bec79263666b6cf7047ac048e5d53eedcf8
 
     </div>
 

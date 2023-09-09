@@ -27,7 +27,7 @@
 
    .loguito {
      display: inline;
-     color: $color-letra;
+     color: #DBEDFF;
      font-family: 'roboto1', sans-serif;
      text-decoration: none;
      font-weight: bolder;
@@ -37,6 +37,13 @@
 
      font-size: 15px;
      margin-top: 11px;
+
+     text-shadow: 
+  2px 0px #D21541,     /* Sombra derecha */
+  -2px 0px #D21541,    /* Sombra izquierda */
+  0px 2px #D21541,     /* Sombra inferior */
+  0px -2px #D21541,    /* Sombra superior */
+ 
    }
 
    .logo1 {
@@ -45,14 +52,22 @@
      display: inline;
      font-weight: bolder;
      font-size: 30px;
-     color: $color-letra;
+     color: #fefeff;
      margin-top: 50px;
      font-family: 'roboto2', sans-serif;
      outline: none;
      text-decoration: none;
      outline: none;
-     text-shadow: 2px 2px red;
-   }
+     text-shadow: 
+  2px 0px #D21541,     /* Sombra derecha */
+  -2px 0px #D21541,    /* Sombra izquierda */
+  0px 2px #D21541,     /* Sombra inferior */
+  0px -2px #D21541,    /* Sombra superior */
+  1px 1px #D21541,     /* Sombra diagonal inferior derecha */
+  -1px 1px #D21541,    /* Sombra diagonal inferior izquierda */
+  1px -1px #D21541,    /* Sombra diagonal superior derecha */
+  -1px -1px #D21541;   /* Sombra diagonal superior izquierda */
+   } 
 
    .trans {
 

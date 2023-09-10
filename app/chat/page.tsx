@@ -5,7 +5,7 @@ import Footer from '../../components/footer/footer';
 
 import Mensajechat from '@/components/mensajechat/mensajechat';
 import Mensaje from '@/models/mensaje';
-import VerIArespuesta  from '@/services/conexion';
+import verIArespuesta from '@/services/conexion';
 
 function Page() {
   const [textito, setTextito] = useState('');
@@ -32,7 +32,7 @@ function Page() {
 
 function recibirRespuestaIA (mensajehumano:Mensaje) {
 
-  let mensajeARTIFICIAL : Mensaje = VerIArespuesta();
+  let mensajeARTIFICIAL : Mensaje = verIArespuesta();
   setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
 
 }

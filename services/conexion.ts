@@ -1,19 +1,9 @@
-import Mensaje from "@/models/mensaje";
+import RespuestaChat from "@/models/respuesta-chat";
+import axios from "axios";
+import 'dotenv/config';
 
-  function verIArespuesta (){
+function verIArespuesta() : Promise<RespuestaChat> {
+  return axios.get(process.env + '/chat');
+}
 
-    let mensajetexto : Mensaje = { esRespuestaIA : true ,
-
-        mensaje : "pepito" ,
-    
-    } 
-
-return mensajetexto;
-
-  }
-
-
- 
-
-
-  export default verIArespuesta;
+export default verIArespuesta;

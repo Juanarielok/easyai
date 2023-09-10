@@ -1,13 +1,14 @@
 'use client'
 import React, { useState } from 'react';
 import './page.scss';
-import Footer from '../../components/footer/footer';
+import Footer from '../../../components/footer/footer';
 
-import Mensajechat from '@/components/mensajechat/mensajechat';
+import Mensajechat from '../../../components/mensajechat/mensajechat';
 import Mensaje from '@/models/mensaje';
 import VerIArespuesta  from '@/services/conexion';
 
 function Page() {
+   
   const [textito, setTextito] = useState('');
   const [messages, setMessages] = useState<Mensaje[]>([]);
 
@@ -36,31 +37,18 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
   setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
 
 }
+  
+  
+    return (
+      <div className="App1">
+   <label className='text1'> Upload your file </label>
+         <img className='subir' src="/icons/tut1.png" />  
 
-
-
-
-  return (
-    <div className="App1">
-
-      
-
-
-      <div>
-        {messages.map((message, index) => (
-
-
-          <Mensajechat key={index} mensaje1={message}  />
-
-
-        ))}
-      </div>
-
-      <div className="BARRABUSQUEDACHAT">
+         <div className="BARRABUSQUEDACHAT">
         <input
           type="text"
           maxLength={180}
-          placeholder="How do I..."
+          placeholder="Any questions...?"
           value={textito}
           onChange={(evento) => setTextito(evento.target.value)}
         />
@@ -68,9 +56,11 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
           Send
         </button>
       </div>
-      <Footer mostrarDonacion={false} />
-    </div>
-  );
-}
 
-export default Page;
+
+      </div>
+    );
+  }
+  
+  export default Page;
+  

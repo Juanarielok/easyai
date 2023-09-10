@@ -1,0 +1,136 @@
+@import 'app/variable.scss';
+
+@font-face {
+  font-family: 'po1'; 
+  src: url('/fuentes/po3.woff2') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'ubu'; 
+  src: url('/fuentes/ubuntu4.ttf') format('opentype'); 
+}
+
+
+@font-face {
+    font-family: 'roboto1'; 
+    src: url('/fuentes/roboto1.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'roboto2'; 
+  src: url('/fuentes/roboto2.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'trot'; 
+  src: url('/fuentes/trot.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa'; 
+  src: url('/fuentes/ropa.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa2'; 
+  src: url('/fuentes/ropa2.ttf') format('opentype'); 
+  }
+  
+  
+  
+  .BARRABUSQUEDACHAT input {
+    display: flex;
+    text-align: left; 
+    align-items: center;
+    margin-top: 90px;
+    margin: 0 auto;
+    color: $color-letra;
+    border-width: 1px; 
+  border-style: solid; 
+  border-color: #365bff;
+    border-radius: 22px;
+    height: 40px;
+    align-items: center;
+    background-color: transparent;
+    font-family:'roboto1';
+    width: 830px;
+    margin-bottom: 289px;
+    max-height: 200px;
+    resize: vertical;
+    overflow-y: auto;
+    *:focus {
+      outline: none; 
+      
+     }
+     
+    &::placeholder  {
+      color: $color-letra;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.6;
+        font-family: 'roboto1', sans-serif;
+        margin-left: 200px;
+        font-size: 15px;
+    }
+    
+   &:focus {
+    outline: none;
+    text-align: inherit;
+   
+       &::placeholder {
+            opacity: 0.35;
+            color: $color-letra;
+        }
+  }
+  
+  
+  
+   &[value] {
+      font-weight:bolder;
+      font-size: 15px;
+      font-family:'roboto1', sans-serif;
+      color: $color-letra;
+      justify-content: center;
+      align-items: center;
+      padding-left: 25px;
+  
+    }
+  
+    
+  }
+  
+  .botonsito2{
+    display: flex;
+    background: none;
+    border: none;
+    color: $color-letra;
+    cursor: pointer;
+    font-size: 20px;
+  margin-top: -323px;
+     margin-left: 1112px;
+     margin-bottom: 295px;
+    
+
+  }
+
+.subir{
+  width: 50px;
+  height: 50px; 
+  margin-right: auto;
+  margin-left: 600px;
+display: table;
+margin-bottom: 40px;
+
+}
+
+.text1{
+  font-family: "po1";
+  color: rgb(23, 38, 247);
+  font-weight: bolder;
+  display: table;
+    margin-right: auto;
+  margin-left: 570px;
+  }
+
+  

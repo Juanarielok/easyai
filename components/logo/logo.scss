@@ -1,5 +1,11 @@
 @import 'app/variable.scss';
-  
+
+@font-face {
+  font-family: 'po1'; 
+  src: url('/fuentes/po3.woff2') format('opentype'); 
+}
+
+
   @font-face {
      font-family: 'roboto1';
      src: url('/fuentes/roboto1.ttf') format('opentype');
@@ -44,32 +50,48 @@
 
    .logo1 {
  
+
+    
+
     
      display: inline;
      font-weight: bolder;
      font-size: 30px;
-     color: #003cff;
+     color: #ffffff;
      margin-top: 50px;
-     font-family: 'roboto1', sans-serif;
+     font-family: 'po1', sans-serif;
      outline: none;
      text-decoration: none;
      outline: none;
      text-shadow:
-     1px 0px #ffffff,     
-     -1px 0px #ffffff,    
-     0px 1px #ffffff,    
-     0px -1px #ffffff,    
-     1px 1px #ffffff,    
-     -1px 1px #ffffff,    
-     1px -1px #ffffff,    
-     -1px -1px #ffffff;
+     1px 0px #0f42eb,
+     -1px 0px #0f42eb,
+     0px 1px #0f42eb,
+     0px -1px #0f42eb,
+     1px 1px #0f42eb,
+     -1px 1px #0f42eb,
+     1px -1px #0f42eb,
+     -1px -1px #0f42eb,
+     2px 0px #ffffff,
+     -2px 0px #ffffff,
+     0px 2px #ffffff,
+     0px -2px #ffffff,
+     2px 2px #ffffff,
+     -2px 2px #ffffff,
+     2px -2px #ffffff,
+     -2px -2px #ffffff;
    
    } 
+
+
+   
+
+
 
    .trans {
 
      color: transparent;
-width: 120px;
+width: 130px;
 margin: auto;
      display: flex;
      flex-direction: row;

@@ -4,17 +4,26 @@ import './page.scss';
 import Footer from '../../components/footer/footer';
 
 import Mensajechat from '@/components/mensajechat/mensajechat';
-import Mensaje from '@/models/mensaje';
 import verIArespuesta from '@/services/conexion';
+import RespuestaChat, { Mensaje } from '@/models/chat';
+import { clone } from 'lodash-es';
+import { AxiosResponse } from 'axios';
 
 function Page() {
   const [textito, setTextito] = useState('');
-  const [messages, setMessages] = useState<Mensaje[]>([]);
+  const [mensagesVista, setMessages] = useState<Mensaje[]>([]);
 
   function ENVIARMENSAJE() {
+    const mensajesOriginal = clone(mensagesVista);
+    const mensajeHUMANO: Mensaje = {
+      esRespuestaIA: false,
+      texto: textito
+    };
 
-    let mensajeHUMANO : Mensaje = { 
+    setTextito('');
+    setMessages([...mensagesVista, mensajeHUMANO]);
 
+<<<<<<< HEAD
       esRespuestaIA : false ,
   
       mensaje : textito
@@ -38,21 +47,28 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
 }
 
 
+=======
+    recibirRespuestaIA(mensajeHUMANO, mensajesOriginal);
+  }
+>>>>>>> cd1e2308d3619d8730b811468d901413e8b551b0
 
+  function recibirRespuestaIA(mensajehumano: Mensaje, mensajesOriginal: Mensaje[]) {
+    verIArespuesta().then((respuesta : AxiosResponse<RespuestaChat>) => {
+      setMessages([...mensajesOriginal, mensajehumano, {
+        texto : respuesta.data.generatedResponse,
+        esRespuestaIA : true
+      }]);
+    });
+  }
 
   return (
     <div className="App1">
 
       
 
-
       <div>
-        {messages.map((message, index) => (
-
-
-          <Mensajechat key={index} mensaje1={message}  />
-
-
+        {mensagesVista.map((message, index) => (
+          <Mensajechat key={index} mensaje={message} />
         ))}
       </div>
 

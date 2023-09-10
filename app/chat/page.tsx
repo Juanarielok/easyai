@@ -21,6 +21,8 @@ function Page() {
   } ;
 
   
+
+  
   
  
   setTextito('');
@@ -36,6 +38,12 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
 }
 
 
+function INGRESARNUEVAPERSONA() {
+  var min = 10000000;
+  var max = 99999999;
+  let dni = Math.round(Math.random() * (max - min) + min);}
+
+
   return (
     <div className="App1">
 
@@ -46,7 +54,7 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
         {messages.map((message, index) => (
 
 
-          <Mensajechat key={index} mensaje1={message} />
+          <Mensajechat key={index} mensaje1={message}  />
 
 
         ))}
@@ -55,7 +63,7 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
       <div className="BARRABUSQUEDACHAT">
         <input
           type="text"
-          maxLength={80}
+          maxLength={180}
           placeholder="How do I..."
           value={textito}
           onChange={(evento) => setTextito(evento.target.value)}

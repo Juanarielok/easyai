@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'ropa'; 
+    src: url('/fuentes/ropa.ttf') format('opentype'); 
+    }
+    
+    @font-face {
+    font-family: 'ropa2'; 
+    src: url('/fuentes/ropa2.ttf') format('opentype'); 
+    }
+
+   
+      
+    .chrome {
+       
+  color: #ffffff;
+  font-size: 10px;
+  font-family:'ropa2';
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 400px;
+ 
+
+  text-shadow:
+  1px 1px 0 rgba(0, 0, 0, 0.3), /* Sombra negra hacia la derecha y hacia abajo */
+  -1px -1px 0 rgba(0, 0, 0, 0.3), /* Sombra negra hacia la izquierda y hacia arriba */
+  1px -1px 0 rgba(0, 0, 0, 0.3), /* Sombra negra hacia la derecha y hacia arriba */
+  -1px 1px 0 rgba(0, 0, 0, 0.3); /* Sombra negra hacia la izquierda y hacia abajo */
+}
+
+
+
+
+
+
+
+
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}

@@ -20,6 +20,8 @@ export default function RootLayout({
       </head>
       <body>
 
+     
+
         <Menu />
         <Logo/>
 
@@ -30,3 +32,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+/*<img className='sol' src="/icons/lens2.gif" />  */

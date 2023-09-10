@@ -1,6 +1,7 @@
 import React from 'react';
 import './mensajechat.scss';
 import Mensaje from '@/models/mensaje';
+import Id from '@/components/id';
 
 
 
@@ -28,12 +29,16 @@ const Mensajechat: React.FC<MensajechatProps> = ({ mensaje1 }) => {
     
     }
 
-  return (
-    <div className={nombredeclase()}>
-      <h4 className='contenidomensajeAI'>{  mensaje1.mensaje }</h4>
-    </div>
 
-    
+
+  return (
+ <div> 
+    <div className={nombredeclase()}  > 
+      <h4 className='contenidomensajeAI' >{  mensaje1.mensaje } </h4>
+      
+    </div>
+    <p className='posicionid'> {<Id/>}</p>
+    </div>
   );
 };
 

@@ -4,7 +4,9 @@ interface  Mensaje {
 
     esRespuestaIA : boolean ,
 
-    mensaje : string
+    mensaje : string ,
+
+  
 
 }  
     

@@ -4,10 +4,16 @@ import Mensaje from "@/models/mensaje";
 
     let mensajetexto : Mensaje = { esRespuestaIA : true ,
 
-        mensaje : "pepito"}
+        mensaje : "pepito" ,
+    
+    } 
 
 return mensajetexto;
 
   }
+
+
+ 
+
 
   export default verIArespuesta;

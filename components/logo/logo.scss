@@ -27,7 +27,7 @@
 
    .loguito {
      display: inline;
-     color: #DBEDFF;
+     color: #1b02ff;
      font-family: 'roboto1', sans-serif;
      text-decoration: none;
      font-weight: bolder;
@@ -38,11 +38,7 @@
      font-size: 15px;
      margin-top: 11px;
 
-     text-shadow: 
-  2px 0px #D21541,     /* Sombra derecha */
-  -2px 0px #D21541,    /* Sombra izquierda */
-  0px 2px #D21541,     /* Sombra inferior */
-  0px -2px #D21541,    /* Sombra superior */
+   
  
    }
 
@@ -52,21 +48,22 @@
      display: inline;
      font-weight: bolder;
      font-size: 30px;
-     color: #fefeff;
+     color: #003cff;
      margin-top: 50px;
-     font-family: 'roboto2', sans-serif;
+     font-family: 'roboto1', sans-serif;
      outline: none;
      text-decoration: none;
      outline: none;
-     text-shadow: 
-  2px 0px #D21541,     /* Sombra derecha */
-  -2px 0px #D21541,    /* Sombra izquierda */
-  0px 2px #D21541,     /* Sombra inferior */
-  0px -2px #D21541,    /* Sombra superior */
-  1px 1px #D21541,     /* Sombra diagonal inferior derecha */
-  -1px 1px #D21541,    /* Sombra diagonal inferior izquierda */
-  1px -1px #D21541,    /* Sombra diagonal superior derecha */
-  -1px -1px #D21541;   /* Sombra diagonal superior izquierda */
+     text-shadow:
+     1px 0px #ffffff,     
+     -1px 0px #ffffff,    
+     0px 1px #ffffff,    
+     0px -1px #ffffff,    
+     1px 1px #ffffff,    
+     -1px 1px #ffffff,    
+     1px -1px #ffffff,    
+     -1px -1px #ffffff;
+   
    } 
 
    .trans {
@@ -81,4 +78,18 @@ margin: auto;
      align-items: center;
    }
 
-   
+   /* text-shadow: 
+  2px 0px #8121ff,     
+  -2px 0px #8121ff,    
+  0px 2px #8121ff,    
+  0px -2px #8121ff,    
+  1px 1px #8121ff,    
+  -1px 1px #8121ff,    
+  1px -1px #8121ff,    
+  -1px -1px #8121ff;   */
+
+  /* text-shadow: 
+  2px 0px #D21541,     
+  -2px 0px #D21541,    
+  0px 2px #D21541,    
+  0px -2px #D21541,   */

@@ -28,6 +28,7 @@
 
 
 .contenedor {
+ 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -39,6 +40,7 @@
   .columna {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
   
   .boton {
@@ -51,5 +53,7 @@
     margin: 5px; 
     background-color:transparent;
     cursor:pointer;
+ 
+     
   }
   

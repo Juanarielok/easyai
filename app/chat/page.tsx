@@ -4,59 +4,45 @@ import './page.scss';
 import Footer from '../../components/footer/footer';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
-import Mensaje from '@/models/mensaje';
 import verIArespuesta from '@/services/conexion';
+import RespuestaChat, { Mensaje } from '@/models/chat';
+import { clone } from 'lodash-es';
+import { AxiosResponse } from 'axios';
 
 function Page() {
   const [textito, setTextito] = useState('');
-  const [messages, setMessages] = useState<Mensaje[]>([]);
+  const [mensagesVista, setMessages] = useState<Mensaje[]>([]);
 
   function ENVIARMENSAJE() {
+    const mensajesOriginal = clone(mensagesVista);
+    const mensajeHUMANO: Mensaje = {
+      esRespuestaIA: false,
+      texto: textito
+    };
 
-    let mensajeHUMANO : Mensaje = { 
+    setTextito('');
+    setMessages([...mensagesVista, mensajeHUMANO]);
 
-      esRespuestaIA : false ,
-  
-      mensaje : textito
-  } ;
+    recibirRespuestaIA(mensajeHUMANO, mensajesOriginal);
+  }
 
-  
-
-  
-  
- 
-  setTextito('');
-  recibirRespuestaIA(mensajeHUMANO);
-}
-
-
-function recibirRespuestaIA (mensajehumano:Mensaje) {
-
-  let mensajeARTIFICIAL : Mensaje = verIArespuesta();
-  setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
-
-}
-
-
-function INGRESARNUEVAPERSONA() {
-  var min = 10000000;
-  var max = 99999999;
-  let dni = Math.round(Math.random() * (max - min) + min);}
-
+  function recibirRespuestaIA(mensajehumano: Mensaje, mensajesOriginal: Mensaje[]) {
+    verIArespuesta().then((respuesta : AxiosResponse<RespuestaChat>) => {
+      setMessages([...mensajesOriginal, mensajehumano, {
+        texto : respuesta.data.generatedResponse,
+        esRespuestaIA : true
+      }]);
+    });
+  }
 
   return (
     <div className="App1">
 
       <Botonerachat />
 
-
       <div>
-        {messages.map((message, index) => (
-
-
-          <Mensajechat key={index} mensaje1={message}  />
-
-
+        {mensagesVista.map((message, index) => (
+          <Mensajechat key={index} mensaje={message} />
         ))}
       </div>
 

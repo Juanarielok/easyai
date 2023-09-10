@@ -1,9 +1,8 @@
-import RespuestaChat from "@/models/respuesta-chat";
-import axios from "axios";
-import 'dotenv/config';
+import RespuestaChat from "@/models/chat";
+import axios, { AxiosResponse } from "axios";
 
-function verIArespuesta() : Promise<RespuestaChat> {
-  return axios.get(process.env + '/chat');
+function verIArespuesta() : Promise<AxiosResponse<RespuestaChat>> {
+  return axios.get<RespuestaChat>(process.env.NEXT_PUBLIC_BACKEND_URL + '/chat');
 }
 
 export default verIArespuesta;

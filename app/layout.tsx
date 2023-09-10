@@ -4,7 +4,6 @@ import './layout.scss'
 import Menu from '../components/menu/menu'
 import Logo from '../components/logo/logo'
 
-import Link from 'next/link'
 export default function RootLayout({
   children,
 }: {

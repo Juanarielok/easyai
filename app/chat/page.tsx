@@ -23,34 +23,8 @@ function Page() {
     setTextito('');
     setMessages([...mensagesVista, mensajeHUMANO]);
 
-<<<<<<< HEAD
-      esRespuestaIA : false ,
-  
-      mensaje : textito
-  } ;
-
-  
-
-  
-  
- 
-  setTextito('');
-  recibirRespuestaIA(mensajeHUMANO);
-}
-
-
-function recibirRespuestaIA (mensajehumano:Mensaje) {
-
-  let mensajeARTIFICIAL : Mensaje = verIArespuesta();
-  setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
-
-}
-
-
-=======
     recibirRespuestaIA(mensajeHUMANO, mensajesOriginal);
   }
->>>>>>> cd1e2308d3619d8730b811468d901413e8b551b0
 
   function recibirRespuestaIA(mensajehumano: Mensaje, mensajesOriginal: Mensaje[]) {
     verIArespuesta().then((respuesta : AxiosResponse<RespuestaChat>) => {

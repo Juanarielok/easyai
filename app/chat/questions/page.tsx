@@ -1,50 +1,21 @@
 'use client'
 import React, { useState } from 'react';
 import './page.scss';
-import Footer from '../../../components/footer/footer';
-
-import Mensajechat from '../../../components/mensajechat/mensajechat';
-import Mensaje from '@/models/mensaje';
-import VerIArespuesta  from '@/services/conexion';
 
 function Page() {
-   
+
   const [textito, setTextito] = useState('');
-  const [messages, setMessages] = useState<Mensaje[]>([]);
 
   function ENVIARMENSAJE() {
+    setTextito('');
+  }
 
-    let mensajeHUMANO : Mensaje = { 
+  return (
+    <div className="App1">
+      <label className='text1'> Upload your file </label>
+      <img className='subir' src="/icons/tut1.png" />
 
-      esRespuestaIA : false ,
-  
-      mensaje : textito
-  } ;
-
-  
-
-  
-  
- 
-  setTextito('');
-  recibirRespuestaIA(mensajeHUMANO);
-}
-
-
-function recibirRespuestaIA (mensajehumano:Mensaje) {
-
-  let mensajeARTIFICIAL : Mensaje = VerIArespuesta();
-  setMessages([...messages, mensajehumano,mensajeARTIFICIAL]);
-
-}
-  
-  
-    return (
-      <div className="App1">
-   <label className='text1'> Upload your file </label>
-         <img className='subir' src="/icons/tut1.png" />  
-
-         <div className="BARRABUSQUEDACHAT">
+      <div className="BARRABUSQUEDACHAT">
         <input
           type="text"
           maxLength={180}
@@ -58,9 +29,8 @@ function recibirRespuestaIA (mensajehumano:Mensaje) {
       </div>
 
 
-      </div>
-    );
-  }
-  
-  export default Page;
-  
+    </div>
+  );
+}
+
+export default Page;

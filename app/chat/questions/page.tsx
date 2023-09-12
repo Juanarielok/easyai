@@ -1,9 +1,8 @@
 'use client'
 import React, { use, useState } from 'react';
 import './page.scss';
-import responderPregunta from '@/services/student-aid';
+import {responderPregunta} from '@/services/chat';
 import RespuestaSobreTexto from '@/models/respuesta-sobre-texto';
-import { pipeline } from '@xenova/transformers';
 function Page() {
 
   let [textito, setTextito] = useState('');

@@ -2,6 +2,17 @@
 @import 'app/variable.scss';
 
 @font-face {
+  font-family: 'po1'; 
+  src: url('/fuentes/po3.woff2') format('opentype'); 
+}
+
+@font-face {
+  font-family: 'ubu'; 
+  src: url('/fuentes/ubuntu4.ttf') format('opentype'); 
+}
+
+
+@font-face {
   font-family: 'roboto1'; 
   src: url('/fuentes/roboto1.ttf') format('opentype'); 
 }
@@ -35,19 +46,19 @@ src: url('/fuentes/ropa2.ttf') format('opentype');
   
     flex-direction: column;
   position: absolute;
-    
+    font-weight: lighter;
   .boton-ALFA, .boton-BETA, .boton-CHARLIE, .boton-About-Us {
     font-weight:650;
     display: inline-block;
 margin-top: 1px;
 font-size: 15px;
   border: none;
-  font-family:'roboto1', sans-serif;
+  font-family:'ubu', sans-serif;
   color: $color-letra;
   display: flex;
   
   &:hover {
-      font-family:'roboto2', sans-serif;
+      font-family:'ubu', sans-serif;
       font-weight: bolder; 
       color: $color-letra;
       cursor: pointer;

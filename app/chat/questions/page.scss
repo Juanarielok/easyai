@@ -121,7 +121,7 @@
   margin-left: 600px;
 display: table;
 margin-bottom: 40px;
-
+fill: red;
 }
 
 .text1{
@@ -133,4 +133,15 @@ margin-bottom: 40px;
   margin-left: 570px;
   }
 
-  
+  .LEERTEXTO{
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+    width: 500px;
+    height: 200PX;
+    font-size: 15px;
+    margin-left: 300px;
+    margin-bottom: 60px;
+    background-color: rgba(255, 165, 0, 0.1);
+  }
+

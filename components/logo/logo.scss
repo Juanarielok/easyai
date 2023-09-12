@@ -2,7 +2,11 @@
 
 @font-face {
   font-family: 'po1'; 
-  src: url('/fuentes/po3.woff2') format('opentype'); 
+  src: url('/fuentes/po1.woff2') format('opentype'); 
+}
+@font-face {
+  font-family: 'ubu'; 
+  src: url('/fuentes/c7.otf') format('opentype'); 
 }
 
 
@@ -33,8 +37,8 @@
 
    .loguito {
      display: inline;
-     color: #1b02ff;
-     font-family: 'roboto1', sans-serif;
+     color: #777474;
+     font-family: 'po1', sans-serif;
      text-decoration: none;
      font-weight: bolder;
      font-size: 40px;
@@ -57,32 +61,32 @@
      display: inline;
      font-weight: bolder;
      font-size: 30px;
-     color: #ffffff;
+     color: #777474;
      margin-top: 50px;
      font-family: 'po1', sans-serif;
      outline: none;
      text-decoration: none;
      outline: none;
-     text-shadow:
-     1px 0px #0f42eb,
-     -1px 0px #0f42eb,
-     0px 1px #0f42eb,
-     0px -1px #0f42eb,
-     1px 1px #0f42eb,
-     -1px 1px #0f42eb,
-     1px -1px #0f42eb,
-     -1px -1px #0f42eb,
-     2px 0px #ffffff,
-     -2px 0px #ffffff,
-     0px 2px #ffffff,
-     0px -2px #ffffff,
-     2px 2px #ffffff,
-     -2px 2px #ffffff,
-     2px -2px #ffffff,
-     -2px -2px #ffffff;
+    
    
    } 
-
+/* text-shadow:
+     1px 0px #ffffff,
+     -1px 0px #ffffff,
+     0px 1px #ffffff,
+     0px -1px #ffffff,
+     1px 1px #ffffff,
+     -1px 1px #ffffff,
+     1px -1px #ffffff,
+     -1px -1px #ffffff,
+     2px 0px #646464,
+     -2px 0px #646464,
+     0px 2px #646464,
+     0px -2px #646464,
+     2px 2px #646464,
+     -2px 2px #646464,
+     2px -2px #646464,
+     -2px -2px #646464;*/
 
    
 

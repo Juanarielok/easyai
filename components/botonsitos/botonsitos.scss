@@ -6,46 +6,11 @@
     margin-bottom: 40px;
   }
   
-  .boton-1,
-  .boton-2,
-  .boton-3,
-  .boton-4 {
-   
-    outline: none;
-    background-image: url('/icons/logo1.png');
-    background-size: 100px 100px ;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .boton-1:hover {
-    background-image: url("/icons/logo1A.png");
-  }
-  
-  .boton-2 {
-    background-image: url('/icons/logo2.png');
-    margin-left: 30px;
-    
-    &:hover {
-        background-image: url("/icons/logo2A.png");
-    }
-  }
-  
-  .boton-3 {
-    background-image: url('/icons/logo3.png');
-    margin-left: 30px;
-    
-    &:hover {
-        background-image: url("/icons/logo3A.png");
-    }
-  }
-  
-  .boton-4 {
-    background-image: url('/icons/logo4.png');
-    margin-left: 30px;
-    
-    &:hover {
-        background-image: url("/icons/logo4A.png");
-    }
-  }
+ .link1 {
+
+width: 90px;
+height: 90px;
+margin-left:-800px;
+ }
+
+ 

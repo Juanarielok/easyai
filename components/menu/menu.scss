@@ -1,76 +1,80 @@
-
 @import 'app/variable.scss';
+
+
+
+@font-face {
+  font-family: 'roboto1';
+  src: url('/fuentes/roboto1.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'roboto2';
+  src: url('/fuentes/roboto2.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'trot';
+  src: url('/fuentes/trot.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ropa';
+  src: url('/fuentes/ropa.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ropa2';
+  src: url('/fuentes/ropa2.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'nove';
+  src: url('/fuentes/nove.ttf') format('opentype');
+}
 
 @font-face {
   font-family: 'po1'; 
-  src: url('/fuentes/po3.woff2') format('opentype'); 
+  src: url('/fuentes/po1.woff2') format('opentype'); 
 }
-
 @font-face {
   font-family: 'ubu'; 
-  src: url('/fuentes/ubuntu4.ttf') format('opentype'); 
+  src: url('/fuentes/c7.otf') format('opentype'); 
 }
 
 
-@font-face {
-  font-family: 'roboto1'; 
-  src: url('/fuentes/roboto1.ttf') format('opentype'); 
+.CONTENEDOR{
+margin-right: auto;
+margin-left: 1000px;
+margin-top: -100px;
+position: absolute;
 }
 
-@font-face {
-font-family: 'roboto2'; 
-src: url('/fuentes/roboto2.ttf') format('opentype'); 
-}
-
-@font-face {
-font-family: 'trot'; 
-src: url('/fuentes/trot.ttf') format('opentype'); 
-}
-
-@font-face {
-font-family: 'ropa'; 
-src: url('/fuentes/ropa.ttf') format('opentype'); 
-}
-
-@font-face {
-font-family: 'ropa2'; 
-src: url('/fuentes/ropa2.ttf') format('opentype'); 
-}
-
-
-.INTERACTIVOS1{
-  font-size: 15px;
-    top:20px;
-    right:5px;
-    width: 100px;
-  
-    flex-direction: column;
-  position: absolute;
-    font-weight: lighter;
-  .boton-ALFA, .boton-BETA, .boton-CHARLIE, .boton-About-Us {
-    font-weight:650;
-    display: inline-block;
-margin-top: 1px;
-font-size: 15px;
+.BOTON{
+  font-family: 'po1';
+  font-size: 14px;
+  margin-right: 10px;
   border: none;
-  font-family:'ubu', sans-serif;
-  color: $color-letra;
-  display: flex;
-  
-  &:hover {
-      font-family:'ubu', sans-serif;
-      font-weight: bolder; 
-      color: $color-letra;
-      cursor: pointer;
-     
-    }
-    
+  font-weight: bolder;
+  color: #000000;
+  background: transparent;
+
+ 
 }
-   
-  }
 
-  .link1{
 
-    color: transparent;
-  }
+.BOTON:hover {
+  cursor: pointer;
+}
+.link1 {
+
+  color: transparent;
+}
+
+
+
+
+
   
+   
+   
+    

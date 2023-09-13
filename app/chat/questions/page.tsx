@@ -16,14 +16,7 @@ let [respuesta1,setrespuesta1]=useState('');
 
    
    
-    responderPregunta(libro,textito).then 
-    
-    (function(respuesta:RespuestaSobreTexto) {
-
-    
-      setrespuesta1(respuesta.answer);
-   
-    })
+ 
   
     
     
@@ -35,7 +28,14 @@ let [respuesta1,setrespuesta1]=useState('');
     
   }
 
- 
+ /*   responderPregunta(libro,textito).then 
+    
+    (function(respuesta:RespuestaSobreTexto) {
+
+    
+      setrespuesta1(respuesta.answer);
+   
+    }) */
 
 
 

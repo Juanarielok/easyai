@@ -35,18 +35,23 @@
      src: url('/fuentes/ropa2.ttf') format('opentype');
    }
 
+   @font-face {
+    font-family: 'nove';
+    src: url('/fuentes/nove.ttf') format('opentype');
+  }
+
    .loguito {
      display: inline;
-     color: #777474;
+     color: #000000;
      font-family: 'po1', sans-serif;
      text-decoration: none;
-     font-weight: bolder;
+     font-weight: lighter;
      font-size: 40px;
 
      outline: none;
 
      font-size: 15px;
-     margin-top: 11px;
+     margin-top: 1px;
 
    
  
@@ -61,13 +66,22 @@
      display: inline;
      font-weight: bolder;
      font-size: 30px;
-     color: #777474;
-     margin-top: 50px;
-     font-family: 'po1', sans-serif;
+     color: #0272D2;
+     margin-top: 40px;
+     font-family: 'nove', sans-serif;
      outline: none;
      text-decoration: none;
      outline: none;
-    
+     text-shadow:
+     0.5px 0px #000000,
+     -0.5px 0px #000000,
+     0px 0.5px #000000,
+     0px -0.5px #000000,
+     0.5px 0.5px #000000,
+     -0.5px 0.5px #000000,
+     0.5px -0.5px rgb(0, 0, 0),
+     -0.5px -0.5px #000000,
+     -0.6px -0.6px #000000;
    
    } 
 /* text-shadow:
@@ -95,7 +109,7 @@
    .trans {
 
      color: transparent;
-width: 130px;
+width: 150px;
 margin: auto;
      display: flex;
      flex-direction: row;

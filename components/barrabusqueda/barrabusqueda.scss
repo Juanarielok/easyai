@@ -37,12 +37,12 @@
     text-align: left; 
     align-items: center;
     color: $color-letra;
-    border: 1px solid $color-letra;
+    border: none;
     border-radius: 22px;
     height: 50px;
     align-items: center;
-    background-color: transparent;
-    font-family:'roboto1';
+    background-color: #F7F7F7;
+    font-family:'ubu';
     width: 100%;
     box-sizing: border-box;
    
@@ -59,7 +59,7 @@
         align-items: center;
         justify-content: center;
         opacity: 0.6;
-        font-family: 'roboto1', sans-serif;
+        font-family: 'ubu', sans-serif;
         margin-left: 200px;
     }
     

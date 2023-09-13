@@ -40,7 +40,7 @@ return(
 
 <img
         className='irchat'
-        src={hovered ? "/icons/picture1A.svg" : "/icons/picture1.svg"}
+        src={hovered ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       />

@@ -1,4 +1,4 @@
-interface RespuestaChat {
+export interface RespuestaChat {
     generatedResponse : string
 }
 

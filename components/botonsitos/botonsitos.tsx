@@ -8,52 +8,121 @@ import { useState } from "react";
 
 export default function botonsitos() {
 
-    
-        const [hovered, setHovered] = useState(false);
-      
-        const handleMouseOver = () => {
-          setHovered(true);
-        };
-      
-        const handleMouseOut = () => {
-          setHovered(false);
-        };
+
+  const [hovered1, setHovered1] = useState(false);
+  const [hovered2, setHovered2] = useState(false);
+  const [hovered3, setHovered3] = useState(false);
+  const [hovered4, setHovered4] = useState(false);
+
+  const handleMouseOver1 = () => {
+    setHovered1(true);
+  };
+
+  const handleMouseOut1 = () => {
+    setHovered1(false);
+  };
+
+  const handleMouseOver2 = () => {
+    setHovered2(true);
+  };
+
+  const handleMouseOut2 = () => {
+    setHovered2(false);
+  };
+
+  const handleMouseOver3 = () => {
+    setHovered3(true);
+  };
+
+  const handleMouseOut3 = () => {
+    setHovered3(false);
+  };
+
+  const handleMouseOver4 = () => {
+    setHovered4(true);
+  };
+
+  const handleMouseOut4 = () => {
+    setHovered4(false);
+  };
+
+
+  return (
 
 
 
 
 
-return(  
+
+
+    <div className="BOTONSITOS">
+
+      <Link className='link4' href="/chat">
+
+
+        <img
+          className='irvideo'
+          src={hovered1 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          onMouseOver={handleMouseOver1}
+          onMouseOut={handleMouseOut1}
+        />
 
 
 
 
+      </Link>
+
+      <Link className='link3' href="/chat">
 
 
-
-<div className="BOTONSITOS">
-<button  className="boton-1"></button>
-<button  className="boton-2"></button>
-<button  className="boton-3"></button>
-<Link className='link1' href="/chat"> 
-
-
-<img
-        className='irchat'
-        src={hovered ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-      />
+        <img
+          className='irmusica'
+          src={hovered2 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          onMouseOver={handleMouseOver2}
+          onMouseOut={handleMouseOut2}
+        />
 
 
 
 
-  </Link>
+      </Link>
+
+      <Link className='link2' href="/chat">
+
+
+        <img
+          className='irimagenes'
+          src={hovered3 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          onMouseOver={handleMouseOver3}
+          onMouseOut={handleMouseOut3}
+        />
 
 
 
-</div>
-)
+
+      </Link>
+
+
+
+      <Link className='link1' href="/chat">
+
+
+        <img
+          className='irchat'
+          src={hovered4 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          onMouseOver={handleMouseOver4}
+          onMouseOut={handleMouseOut4}
+        />
+
+
+
+
+      </Link>
+
+
+
+    </div>
+  )
 
 
 

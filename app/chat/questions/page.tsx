@@ -3,6 +3,8 @@ import React, { use, useState } from 'react';
 import './page.scss';
 import {responderPregunta} from '@/services/chat';
 import RespuestaSobreTexto from '@/models/respuesta-sobre-texto';
+import RespuestaChat from '@/models/chat';
+import { AxiosResponse } from 'axios';
 function Page() {
 
   let [textito, setTextito] = useState('');
@@ -13,11 +15,16 @@ let [respuesta1,setrespuesta1]=useState('');
 
   function ENVIARMENSAJE() {
 
+    responderPregunta(libro,textito).then 
+    
+    (function (respuestaa:AxiosResponse<RespuestaSobreTexto>) {
+
+      setrespuesta1(respuestaa.data.answer)
    
+    }) 
    
  
   
-    
     
 
     setTextito('');
@@ -27,14 +34,7 @@ let [respuesta1,setrespuesta1]=useState('');
     
   }
 
- /*   responderPregunta(libro,textito).then 
-    
-    (function(respuesta:RespuestaSobreTexto) {
 
-    
-      setrespuesta1(respuesta.answer);
-   
-    }) */
 
 
 

@@ -4,7 +4,7 @@ import './page.scss';
 import Footer from '../../components/footer/footer';
 
 import Mensajechat from '@/components/mensajechat/mensajechat';
-import verIArespuesta from '@/services/conexion';
+import verIArespuesta from '@/services/chat'
 import RespuestaChat, { Mensaje } from '@/models/chat';
 import { clone } from 'lodash-es';
 import { AxiosResponse } from 'axios';

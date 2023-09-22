@@ -1,17 +1,36 @@
 .BOTONSITOS {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
     margin-top: 90px;
     margin-bottom: 40px;
-    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
   }
-  
+
+
  .link1 {
 
 width: 90px;
 height: 90px;
-margin-left:-800px;
- }
+ margin-left: 10px;}
 
- 
+  
+ .link2 {
+
+  width: 90px;
+  height: 90px;
+   margin-left: 10px;}
+
+   
+ .link3 {
+
+  width: 90px;
+  height: 90px;
+   margin-left: 10px;}
+
+   .link4 {
+
+    width: 90px;
+    height: 90px;
+     margin-left: 10px;}

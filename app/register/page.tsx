@@ -4,13 +4,10 @@
 import './page.scss';
 import Link from 'next/link';
 import React, { useState } from 'react';
-function App() {
+function Page() {
 
  let [textito, settextito] = useState('');
 
- function CAMBIARTEXTO (evento:any){
-    settextito(evento.target.value);
-  };
 
 
 
@@ -19,15 +16,7 @@ function App() {
     <div className="App">
    
    <div>   
-      <div className="TITULAZO">
-
-      <Link href="/">
-          <h4>AI Easy</h4>
-          </Link>
-
-          <h4 className="loguito">©</h4>
-</div>
-
+      
 
 
 
@@ -36,18 +25,14 @@ function App() {
           
         <label  className='cartelin '> Email         </label>
 
-<input></input>
 
 
 
 
 </div>
   
-{textito && (
-<button className="botonsito1">
-  <span role="img" aria-label="botonsito1">►</span>
-</button>
-)}
+
+
 </div>
         
    
@@ -66,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default Page;

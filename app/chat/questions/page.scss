@@ -3,6 +3,7 @@
 
   
   
+  
   .BARRABUSQUEDACHAT input {
     display: flex;
     text-align: left; 
@@ -10,13 +11,15 @@
     margin-top: 90px;
     margin: 0 auto;
     color: $color-letra;
-    border: none;
+    border-width: 1px; 
+  border-style: solid; 
+  border-color: #365bff;
     border-radius: 22px;
-    height: 120px;
+    height: 40px;
     align-items: center;
     background-color: transparent;
     font-family:'roboto1';
-    width: 850px;
+    width: 830px;
     margin-bottom: 289px;
     max-height: 200px;
     resize: vertical;
@@ -75,5 +78,36 @@
      margin-bottom: 295px;
     
 
+  }
+
+.subir{
+  width: 50px;
+  height: 50px; 
+  margin-right: auto;
+  margin-left: 600px;
+display: table;
+margin-bottom: 40px;
+fill: red;
+}
+
+.text1{
+  font-family: "po1";
+  color: rgb(23, 38, 247);
+  font-weight: bolder;
+  display: table;
+    margin-right: auto;
+  margin-left: 570px;
+  }
+
+  .LEERTEXTO{
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+    width: 500px;
+    height: 200PX;
+    font-size: 15px;
+    margin-left: 300px;
+    margin-bottom: 60px;
+    background-color: rgba(255, 165, 0, 0.1);
   }
 

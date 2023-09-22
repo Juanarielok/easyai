@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'roboto1';
+    src: url('/fuentes/roboto1.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'roboto2';
+    src: url('/fuentes/roboto2.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'trot';
+    src: url('/fuentes/trot.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa';
+    src: url('/fuentes/ropa.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa2';
+    src: url('/fuentes/ropa2.ttf') format('opentype');
+}
+
+.titulo {
+    display: flex;
+    word-break: break-word;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1.5s;
+    transition: transform ease 1.5s, width 1.5s ease-in-out, font-size 1.5s ease-in-out;
+    margin-left: 30px;
+    left: 0;
+    color: #000000;
+    font-family: 'roboto1', sans-serif;
+}

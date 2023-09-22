@@ -21,6 +21,10 @@ function BannerHistoria() {
 
                     <li><b>Expert Support</b>: Our dedicated support team is available to resolve any queries or challenges you may encounter, providing a seamless user experience.</li>
                 </ul>
+                <h1>Our Journey</h1>
+            </div>
+            <div>
+                <h1>Our Mission</h1>
             </div>
 
         </div>

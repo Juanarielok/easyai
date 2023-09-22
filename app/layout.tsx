@@ -22,9 +22,6 @@ export default function RootLayout({
      
 
         <Header />
-       
-        <Menu />
-        <Logo/>
 
         {children}
 

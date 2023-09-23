@@ -1,0 +1,29 @@
+@import 'app/variable.scss';
+
+@font-face {
+  font-family: 'po1';
+  src: url('/fuentes/po3.woff2') format('opentype');
+}
+
+@font-face {
+  font-family: 'ubu';
+  src: url('/fuentes/ubuntu4.ttf') format('opentype');
+}
+
+
+
+.copyrightcheto {
+  font-size: 12px;
+
+  font-weight: bolder;
+  font-family: 'po1', sans-serif;
+  width: 70px;
+  display: flex;
+  color: #afafaf;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  margin: 0 0 5px 5px;
+}

@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'ropa'; 
+    src: url('/fuentes/roboto1.t') format('opentype'); 
+    }
+    
+    @font-face {
+    font-family: 'ropa2'; 
+    src: url('/fuentes/ropa2.ttf') format('opentype'); 
+    }
+
+    @font-face {
+      font-family: 'po1'; 
+      src: url('/fuentes/po3.woff2') format('opentype'); 
+    }
+    
+    @font-face {
+      font-family: 'ubu'; 
+      src: url('/fuentes/ubuntu4.ttf') format('opentype'); 
+    }
+   
+    @font-face {
+      font-family: 'BAR'; 
+      src: url('/fuentes/BarcodeFont.ttf') format('opentype'); 
+    }
+   
+      
+    .chrome {
+       
+  color: #000000;
+  font-size: 16px;
+  font-family:'BAR';
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 400px;
+ 
+
+ 
+
+ 
+}
+
+
+
+
+
+
+
+
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}

@@ -1,0 +1,46 @@
+@import 'app/variable.scss';
+
+
+@font-face {
+  font-family: 'ubu';
+  src: url('/fuentes/uu.ttf') format('opentype');
+}
+
+
+
+.CONTENEDOR{
+margin-right: auto;
+margin-left: 1000px;
+margin-top: -100px;
+position: absolute;
+}
+
+.BOTON{
+ 
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  font-weight: bolder;
+  color: #000000;
+  background: transparent;
+  font-family: 'ubu';
+ 
+}
+
+
+.BOTON:hover {
+  cursor: pointer;
+}
+.link1 {
+
+  color: transparent;
+}
+
+
+
+
+
+  
+   
+   
+    

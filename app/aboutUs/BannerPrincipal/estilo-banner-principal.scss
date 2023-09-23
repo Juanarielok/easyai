@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'roboto1';
+    src: url('/fuentes/roboto1.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'roboto2';
+    src: url('/fuentes/roboto2.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'trot';
+    src: url('/fuentes/trot.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa';
+    src: url('/fuentes/ropa.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ropa2';
+    src: url('/fuentes/ropa2.ttf') format('opentype');
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'roboto1', sans-serif;
+}
+
+.parrafo {
+    color: white;
+    font-size: 20px;
+    font-family: 'roboto1', sans-serif;
+
+}
+
+
+
+.info {
+    padding: 10%;
+    max-height: 400px;
+    margin-bottom: 20px;
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
+    border-radius: 20px;
+    transition: all 1s ease-out;
+}

@@ -1,0 +1,25 @@
+@import 'app/variable.scss';
+
+.dandolastima {
+  border-radius: 9px;
+  height: 32px;
+background: #7F7F7F;
+  font-size: 15px;
+  color:#fffffffa;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  text-shadow: none;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.link1donacion {
+  margin-top: 30px;
+height: 33px;
+  color: transparent;
+  width: 100%;
+  text-align: center;
+}

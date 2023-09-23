@@ -23,7 +23,7 @@ function Page() {
 
         <div className="BARRAemail">
           
-        <label  className='cartelin '> Email         </label>
+        <label  className='cartelin '> Email Address        </label>
 
 
 
@@ -44,12 +44,7 @@ function Page() {
 
 
 </div>
-        
-   
-  
 
-
-     
 
 
  

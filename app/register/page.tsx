@@ -40,8 +40,18 @@ function App() {
 
 
 
-
 </div>
+
+<div className="IDNOMBRE">
+          
+          <label  className='cartelin '> Email         </label>
+  
+  <input></input>
+  
+  
+  
+  </div>
+    
   
 {textito && (
 <button className="botonsito1">

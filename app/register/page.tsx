@@ -21,7 +21,7 @@ function Registro () {
 
             <div className= "contenedor-boton">
                 <button className='botonEnviar' id='enviar'>Submit</button>
-                <h3>Already have an account? Sign in <Link href={'./register/Login'} className='enlace-login'>here</Link></h3>
+                <h3>Already have an account? Sign in <Link href={'./Login'} className='enlace-login'>here</Link></h3>
             </div>
 
         </div>

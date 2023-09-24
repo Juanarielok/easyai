@@ -41,52 +41,54 @@
     border-radius: 3px;
   }
 
-
-
   .contenedor-titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     height: auto;
-    margin-top: 10%;
+    margin-top: 5%;
+
+    h1 {
+      font-family: palanquinLight;
+      top: 200px;
+      font-size: 40px;
+      margin-bottom: -10px;
+    }
+
+    h2 {
+      font-family: palanquinLight;
+      font-weight: 300;
+      top: -10px;
+    }
   }
 
-  .contenedor-titulo h1 {
-    font-family: palanquinLight;
-    top: 200px;
-    font-size: 40px;
-    margin-bottom: -10px;
-  }
 
-  .contenedor-titulo h2 {
-    font-family: palanquinLight;
-    font-weight: 300;
-    top: -10px;
-  }
-
-  .contenedor-label {
-    height: auto;
+  .contenedor-credenciales {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    margin-top: 3%;
   }
 
-  .texto {
+
+  .textoLogin {
     font-family: 'palanquinLight';
-    margin-top: 10%;
     display: relative;
-    height: 100px;
+    height: 80px;
     width: 400px;
     border-radius: 10px;
     border: 0.1px solid rgba(0, 0, 0, 0.731);
     font-size: 30px;
     font-weight:200;
     text-align: center;
+    margin-right: 10px;
   }
 
-  .texto::placeholder {
+
+  .textoLogin::placeholder {
 
     text-align: center;
     padding-right: 5px;
@@ -94,39 +96,27 @@
 
   }
 
-  .texto:focus {
+  .textoLogin:focus {
     border: 1px solid rgba(83, 18, 141, 0.7);
     outline: none;
   }
 
-  .contenedor-boton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin-top: 5%;
-
-    h3 {
-      font-family: palanquinLight;
-    }
-  }
-
-  .botonEnviar {
+  .boton-login {
     font-family: 'palanquinLight';
+    font-size: 20px;
+    margin-top: 5%;
     height: 60px;
     width: 200px;
     border-radius: 10px;
+    padding: 10px 20px;
     background-color: white;
-    font-size: 20px;
+    border: 1.5px solid black;
+  }
+
+  .boton-login:hover {
+    box-shadow: 0 0 10px rgba(43, 14, 84, 0.576);
+    outline: none;
     border: 0.1px solid black;
   }
 
-  .botonEnviar:hover {
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);;
-  }
 
-
-  .botonEnviar::after {
-    content: " 🚀";
-  }
-  

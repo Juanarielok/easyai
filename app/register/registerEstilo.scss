@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'palanquinLight';
+  src: url('/fuentes/Palanquin/Palanquin-ExtraLight.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PalanquinThin';
+  src: url('/public/fuentes/Palanquin/Palanquin-Thin.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'roboto1'; 
+    src: url('/fuentes/roboto1.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'roboto2'; 
+  src: url('/fuentes/roboto2.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'trot'; 
+  src: url('/fuentes/trot.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa'; 
+  src: url('/fuentes/ropa.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa2'; 
+  src: url('/fuentes/ropa2.ttf') format('opentype'); 
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    border-radius: 3px;
+  }
+
+
+
+  .contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .contenedor-titulo h1 {
+    font-family: palanquinLight;
+    top: 200px;
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+
+  .contenedor-titulo h2 {
+    font-family: palanquinLight;
+    font-weight: 300;
+    top: -10px;
+  }
+
+  .contenedor-label {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texto {
+    font-family: 'palanquinLight';
+    margin-top: 10%;
+    display: relative;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.731);
+    font-size: 30px;
+    font-weight:200;
+    text-align: center;
+  }
+
+  .texto::placeholder {
+
+    text-align: center;
+    padding-right: 5px;
+    color: rgba(128, 128, 128, 0.398);
+
+  }
+
+  .texto:focus {
+    border: 1px solid rgba(83, 18, 141, 0.7);
+    outline: none;
+  }
+
+  .contenedor-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 5%;
+
+    h3 {
+      font-family: palanquinLight;
+    }
+  }
+
+  .enlace-login {
+    color: rgba(137, 14, 245, 0.7);
+
+    :active {
+      color:rgba(0, 0, 0, 0.731);
+    }
+  }
+
+  .botonEnviar {
+    font-family: 'palanquinLight';
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    border: 1.5px solid black;
+  }
+
+  .botonEnviar:hover {
+    box-shadow: 0 0 10px rgba(43, 14, 84, 0.576);
+    outline: none;
+    border: 0.1px solid black;
+  }
+
+
+  .botonEnviar::after {
+    content: " 🚀";
+  }
+  

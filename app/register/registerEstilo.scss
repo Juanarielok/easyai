@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'palanquinLight';
+  src: url('/fuentes/Palanquin/Palanquin-ExtraLight.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PalanquinThin';
+  src: url('/public/fuentes/Palanquin/Palanquin-Thin.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'roboto1'; 
+    src: url('/fuentes/roboto1.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'roboto2'; 
+  src: url('/fuentes/roboto2.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'trot'; 
+  src: url('/fuentes/trot.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa'; 
+  src: url('/fuentes/ropa.ttf') format('opentype'); 
+  }
+  
+  @font-face {
+  font-family: 'ropa2'; 
+  src: url('/fuentes/ropa2.ttf') format('opentype'); 
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    border-radius: 3px;
+  }
+
+
+
+  .cajaTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .cajaTexto h1 {
+    font-family: palanquinLight;
+    top: 200px;
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+
+  .cajaTexto h2 {
+    font-family: palanquinLight;
+    font-weight: 300;
+    top: -10px;
+  }
+
+  .labelTexto {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texto {
+    font-family: 'palanquinLight';
+    margin-top: 10%;
+    display: relative;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.731);
+    font-size: 30px;
+    font-weight:200;
+    text-align: center;
+  }
+
+  .texto::placeholder {
+
+    text-align: center;
+    padding-right: 5px;
+    color: rgba(128, 128, 128, 0.398);
+
+  }
+
+  .texto:focus {
+    border: 1px solid rgba(83, 18, 141, 0.7);
+    outline: none;
+  }
+
+  .contenedorBoton {
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .botonEnviar {
+    font-family: 'palanquinLight';
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    border: 0.1px solid black;
+  }
+
+  .botonEnviar:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);;
+  }
+
+
+  .botonEnviar::after {
+    content: " 🚀";
+  }
+  

@@ -17,7 +17,13 @@ const CajonContrasena: React.FC<CajonContrasenaProps> = ({password, updatedPassw
     }
 
     const manejarClick = () => {
-        hidePassword(!updatedPassword);
+        if (password.length >= 1) 
+        {
+            hidePassword(!updatedPassword);
+        }
+        else {
+            hidePassword(false);
+        }
     }
 
     return(
@@ -31,7 +37,7 @@ const CajonContrasena: React.FC<CajonContrasenaProps> = ({password, updatedPassw
             className = 'estilo-contrasena'
         >
         </input>
-        <img src = '/icons/ojo-abierto.png' className = 'icono-contrasena' onClick = {manejarClick}></img>
+        <img src = {updatedPassword ? '/icons/ojo-abierto.png' : '/icons/ojo-cerrado.png'} className = 'icono-contrasena' onClick = {manejarClick} ></img>
     </div>)
 };
 

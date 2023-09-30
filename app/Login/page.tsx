@@ -1,9 +1,17 @@
 'use client'
 
 import './loginEstilo.scss';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import CajonContrasena from '@/components/cajonContrasena/cajonContrasena';
 
 function Login () {
+
+    const [password, setPassword] = useState('');
+    const [updatedPassword, hidePassword] = useState(false);
+
+    const showPassword = () => {
+        console.log(password);
+    }
 
     return(
         <div className="principal">
@@ -14,10 +22,26 @@ function Login () {
             </div>
 
             <div className='contenedor-credenciales'>
-                <input type="text" name="email" placeholder='Email'className='textoLogin' id="emailTexto"/>
-                <input type="text" name="contraseña" placeholder='Password' className='textoLogin'/>
+
+                 <input 
+                    type="text"
+                    name="email" 
+                    placeholder='Email'
+                    className='textoLogin'
+                    id="emailTexto"
+                  />
+
+                <div className='contenedor-contraseña'>
+                <CajonContrasena
+                    password={password}
+                    setPassword = {setPassword}
+                    updatedPassword={updatedPassword}
+                    hidePassword={hidePassword}
+                    />
+                </div>
+
             </div>
-            <button className="boton-login">Log in</button>
+            <button className="boton-login" onClick={showPassword}>Log in</button>
         </div>
     )
 }

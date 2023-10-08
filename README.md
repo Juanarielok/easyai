@@ -22,11 +22,26 @@ We've created AI Easy to democratize the use of artificial intelligence, making 
 
 * **Clean & Accessible Code:** Following best practices, our code is clean and W3C valid, making it easy for developers to integrate their own features if needed.
 
+## Sponsors
+
+If you share our mission on democratizing all the tools that AI has to offer us, you can sponsor our project here: [Become one of our sponsors](https://opencollective.com/tabler#sponsor)
+
+## :sunglasses: Creators
+
+| Creator        | Role                      | GitHub Profile  |
+| -------------- | --------------------------|----------------- |
+| Pablo          | Senior Front-End Developer| [Pablo](https://github.com/pablo-alm)
+| Juan           | Front-End Developer       | [Juan](https://github.com/Juanarielok) |
+| José David     | Full-Stack Developer      | [José David](https://github.com/B4LSEROS) |
+                    
+
+
+## Credits
+Thank you to all creators and contributors for facilitating and contributing to the democratization of Artificial Intelligence: lack simplicity and accesibility is oftentimes a barrier between AI and non-tech folk; however, AI Easy reduces this gap to make everything easier ❤️
 
 
 
-
-
+##  :factory: Installation and Setup Environment
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

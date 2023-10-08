@@ -4,7 +4,7 @@ AI application with a sleek, user-friendly interface, simplifying complex tasks 
 </p>
 
 ## :pushpin: Preview
-AI Easy aims to democratize the use of artificial intelligence by providing a high-quality yet minimalistic User Interface. AI Easy is totally compatible and responsive with all type of browsers. We've streamlined all the features and tools you need to be more productive and make your day-to-day life easier. Every component and functionality has been created with at attention to detail, without forgetting the human aspect that drives our goals, to make the user experience as seemleess as possible. 
+AI Easy aims to democratize the use of artificial intelligence by providing a high-quality yet minimalistic User Interface. AI Easy is totally compatible and responsive with all type of browsers. We've streamlined all the features and tools you need to be more productive and make your day-to-day life easier. Every component and functionality has been created with attention to detail, without forgetting the human aspect that drives our goals, to make the user experience as seemleess as possible. 
 
 ## :unlock: Features
 We've created AI Easy to democratize the use of artificial intelligence, making it accessible for everyone. Whether you're looking to interact with an advanced AI chatbot, generate professional resumes, or create high-quality images, AI Easy has got you covered. The only requirement to tap into these powerful features is basic digital literacy — as a reward, you'll obtain the tools to make your life easier and substantially more productive, all in one platform.

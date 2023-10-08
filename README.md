@@ -1,3 +1,9 @@
+# AI Easy
+
+## :mailbox_with_no_mail: Preview
+AI Easy aims to democratize the use of artificial intelligence by providing a high-quality yet minimalistic User Interface. AI Easy is totally compatible and responsive with all type of browsers. We've streamlined all the features and tools you need to be more productive and make your day-to-day life easier. Every component and functionality has been created with at attention to detail, without forgetting the human aspect that drives our goals, to make the user experience as seemleess as possible. 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

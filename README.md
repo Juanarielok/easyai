@@ -1,4 +1,8 @@
-# AI Easy
+<p align="center">
+<a href="https://github.com/tabler/tabler"><img src="//imgur.com/a/wGwP0Yc" alt="AI Easy revolutionizes daily productivity by democratizing artificial intelligence through a sleek, user-friendly interface, simplifying complex tasks and enhancing your life" width="300"></a><br><br>
+AI Easy democratizes artificial intelligence through a sleek, user-friendly interface, simplifying complex tasks and enhancing your life
+</p>
+
 
 ## :mailbox_with_no_mail: Preview
 AI Easy aims to democratize the use of artificial intelligence by providing a high-quality yet minimalistic User Interface. AI Easy is totally compatible and responsive with all type of browsers. We've streamlined all the features and tools you need to be more productive and make your day-to-day life easier. Every component and functionality has been created with at attention to detail, without forgetting the human aspect that drives our goals, to make the user experience as seemleess as possible. 

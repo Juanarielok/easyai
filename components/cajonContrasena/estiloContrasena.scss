@@ -1,0 +1,43 @@
+.cajon-contrasena {
+  display: flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
+}
+
+.estilo-contrasena {
+    font-family: 'uno';
+    display: relative;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.731);
+    font-size: 30px;
+    font-weight:200;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .estilo-contrasena::placeholder {
+
+    text-align: center;
+    padding-right: 5px;
+    color: rgba(128, 128, 128, 0.398);
+
+  }
+
+  .estilo-contrasena:focus {
+    border: 1px solid rgba(83, 18, 141, 0.7);
+    outline: none;
+  }
+
+  .icono-contrasena {
+    height: 32px;
+    width: 32px;
+
+  }
+  
+

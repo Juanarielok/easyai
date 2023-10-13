@@ -61,11 +61,4 @@ function BannerPrincipal() {
     );
 };
 
-
-
-
-
-
-
-
 export default BannerPrincipal;

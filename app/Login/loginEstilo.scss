@@ -78,11 +78,10 @@
     margin-top: 3%;
   }
 
-
   .textoLogin {
     font-family: 'uno';
     display: relative;
-    height: 80px;
+    height: 100px;
     width: 400px;
     border-radius: 10px;
     border: 0.1px solid rgba(0, 0, 0, 0.731);
@@ -91,7 +90,6 @@
     text-align: center;
     margin-right: 10px;
   }
-
 
   .textoLogin::placeholder {
 
@@ -125,3 +123,8 @@
   }
 
 
+.contenedor-contraseña{
+  font-family: 'uno';
+
+
+}

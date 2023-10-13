@@ -33,6 +33,12 @@
   src: url('/fuentes/ropa2.ttf') format('opentype'); 
   }
 
+@font-face {
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
+}
+
+
   .principal {
     display: flex;
     flex-direction: column;
@@ -53,14 +59,14 @@
   }
 
   .contenedor-titulo h1 {
-    font-family: palanquinLight;
+    font-family: 'uno';
     top: 200px;
     font-size: 40px;
     margin-bottom: -10px;
   }
 
   .contenedor-titulo h2 {
-    font-family: palanquinLight;
+    font-family: 'uno';
     font-weight: 300;
     top: -10px;
   }
@@ -73,7 +79,7 @@
   }
 
   .texto {
-    font-family: 'palanquinLight';
+    font-family: 'uno';
     margin-top: 10%;
     display: relative;
     height: 100px;
@@ -106,7 +112,7 @@
     margin-top: 5%;
 
     h3 {
-      font-family: palanquinLight;
+      font-family: 'uno';
     }
   }
 
@@ -119,7 +125,7 @@
   }
 
   .botonEnviar {
-    font-family: 'palanquinLight';
+    font-family: 'uno';
     height: 60px;
     width: 200px;
     border-radius: 10px;

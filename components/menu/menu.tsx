@@ -9,10 +9,13 @@ export default function menu() {
 return(  
 
   <div className='CONTENEDOR'>
-  <button className='BOTON'><Link href={'/register'}>Sign Up</Link></button>
-  <button className='BOTON'>Log In</button>
-  <button className='BOTON'>About Us</button>
+ <Link className='link1' href={'/register'}> <button className='BOTON'>Sign Up </button>    </Link>
+ <Link className='link1' href={'/Login'}> <button className='BOTON'>Log In</button></Link>
+ <Link className='link1' href={'/aboutUs'}>  <button className='BOTON'>About Us</button></Link>
   <button className='BOTON'>Contact</button>
+
+
+  
 </div>
 
 )

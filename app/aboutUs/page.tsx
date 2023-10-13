@@ -11,14 +11,14 @@ import Footer from '@/components/footer/footer';
 function App() {
   return (
     <>
-      <div className="App">
+      <div className="sobrenosotros">
         <Encabezado />
         <BannerPrincipal />
         <div className='hola1'></div>
         <div className='hola2'></div>
         <BannerHistoria />
       </div>
-      <Footer mostrarDonacion={false} />
+     
     </>
   )
 }

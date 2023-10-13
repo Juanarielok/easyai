@@ -23,6 +23,12 @@
     src: url('/fuentes/ropa2.ttf') format('opentype');
 }
 
+@font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
+
+.sobrenosotros{
 .principal {
     display: flex;
     flex-direction: column;
@@ -46,20 +52,20 @@
     border-radius: 30px;
     padding: 20px;
     justify-content: stretch;
-    font-family: 'roboto1', sans-serif;
+    font-family: 'uno';
 
 }
 
 .principal div:nth-child(odd) {
     font-size: 120%;
     align-self: flex-start;
-    background-color: rgb(0, 128, 0, 0.2);
+    background-color: rgba(255, 153, 0, 0.2);
     transition: transform ease-in-out 1s;
 
 
     &:hover {
         transform: rotate(5deg);
-        background-color: rgb(0, 128, 0, 0.3);
+        background-color: rgba(255, 136, 0, 0.3);
     }
 }
 
@@ -72,12 +78,12 @@
 .principal div:nth-child(even) {
     display: inherit;
     align-self: flex-end;
-    background-color: rgb(23, 195, 101, 0.2);
+    background-color: rgba(255, 0, 0, 0.2);
     transition: transform ease-in-out(3s);
 
     &:hover {
         transform: rotate(-3deg);
-        background-color: rgb(23, 195, 101, 0.3);
+        background-color: rgba(255, 145, 0, 0.3);
     }
 
     .lista {
@@ -106,10 +112,10 @@
 
 .principal div:nth-child(odd) {
     align-self: flex-start;
-    background-color: rgb(0, 128, 0, 0.2);
+    background-color: rgba(255, 123, 0, 0.2);
 }
 
 .principal div:nth-child(even) {
     align-self: flex-end;
-    background-color: rgb(23, 195, 101, 0.2)
-}
+    background-color: rgba(255, 123, 0, 0.2)
+}}

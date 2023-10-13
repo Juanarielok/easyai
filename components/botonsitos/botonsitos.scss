@@ -8,29 +8,79 @@
 
   }
 
+  @font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
 
- .link1 {
-
-width: 90px;
-height: 90px;
- margin-left: 10px;}
+.text0{
+  color: rgb(80, 80, 80);
+font-family: "uno";
+text-decoration-line: none;
+border: none;
+text-decoration: none; 
+}
 
   
- .link2 {
-
-  width: 90px;
-  height: 90px;
-   margin-left: 10px;}
+ .irchat {
+  width: 100px;
+  height: 100px;
+margin-top: 10px;
+   margin-left: 20px;
+   cursor: pointer;}
 
    
  .link3 {
-
+  cursor: pointer;
   width: 90px;
   height: 90px;
-   margin-left: 10px;}
+   margin-left: 28px;}
 
-   .link4 {
+   .iraudio {
+    margin-top: 11px;
+    width: 100px;
+    height: 100px;
+     margin-left: 20px;
+     cursor: pointer;}
 
-    width: 90px;
-    height: 90px;
-     margin-left: 10px;}
+     .link2{
+      margin-left: 10px;
+      margin-top: -20px;
+      width: 90px;
+      height: 90px;
+   text-decoration: none;
+     }
+
+     .link3{
+      
+      width: 90px;
+      height: 90px;
+      
+      text-decoration: none;
+        }
+
+        .link4{
+          margin-top: -20px;
+          margin-right: 30px;
+          width: 90px;
+          height: 90px;
+          text-decoration: none;
+            }
+
+          .text01{
+            width: 200px;
+            color: rgb(80, 80, 80);
+            margin-left: 33px;
+font-family: "uno";
+            align-items: center;
+
+          }
+
+          .text02{
+            color: rgb(80, 80, 80);
+            width: 20px;
+            margin-left: 33px;
+font-family: "uno";
+            align-items: center;
+
+          }

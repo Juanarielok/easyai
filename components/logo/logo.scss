@@ -6,39 +6,40 @@
 }
 
 @font-face {
-  font-family: 'ubu';
-  src: url('/fuentes/s.woff') format('woff');
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
 }
 
 
-   .loguito {
-     display: inline;
-     color:#2ABB9B;
    
-     text-decoration: none;
-     font-family: 'ubu';
-     font-size: 40px;
-     
-     outline: none;
-font-weight: bolder;
-     font-size: 15px;
-     margin-top: 1px;
-
-   
- 
-   }
 
    .logo1 {
      display: inline;
-  
+
      font-size: 30px;
-     color: #2ABB9B;
+     color:#ffffff;
      margin-top: 40px;
-     font-family: 'ubu';
+     font-family: 'uno';
 
      outline: none;
      text-decoration: none;
-     
+     text-shadow:
+     1px 0px #ff0055,
+     -1px 0px #ff0055,
+     0px 1px #ff0055,
+     0px -1px #ff0055,
+     1px 1px #ff0055,
+     -1px 1px #ff0055,
+     1px -1px #ff0055,
+     -1px -1px #ff0055,
+     2px 0px #646464,
+     -2px 0px #646464,
+     0px 2px #646464,
+     0px -2px #646464,
+     2px 2px #646464,
+     -2px 2px #646464,
+     2px -2px #646464,
+     -2px -2px #646464;
     
    
    } 
@@ -69,10 +70,12 @@ font-weight: bolder;
 
 
    .trans {
-
+    margin-top:-20px;
+    margin-left: 60px;
+margin-right: 200px;
      color: transparent;
 width: 150px;
-margin: auto;
+
 font-family: 'roboto1';
      display: flex;
      flex-direction: row;

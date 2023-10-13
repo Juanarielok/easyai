@@ -5,6 +5,21 @@
   }
   
   @font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'lux';
+    src: url('/fuentes/lux.ttf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'palanquinLight';
+    src: url('/fuentes/Palanquin/Palanquin-ExtraLight.ttf') format('opentype');
+  }
+  
+  @font-face {
   font-family: 'roboto2'; 
   src: url('/fuentes/roboto2.ttf') format('opentype'); 
   }
@@ -38,14 +53,14 @@ width: fit-content;
 background-color: #ebf8f8; 
 
 margin-left:auto;
-margin-right: 320px;
+
 border-radius: 9px;
 max-width: 40%;
 word-wrap: break-word;
 margin-bottom: 16px;
   overflow-y: auto;
   overflow-x: auto;
- box-shadow: 1PX 1PX 0.1px #00000013;
+ box-shadow: 1px 1px 0.1px #00000013;
 height: auto;
 height: -20px;
 
@@ -55,7 +70,7 @@ height: -20px;
  
 
 font-weight: bolder;
-font-family: 'roboto1';
+font-family: 'palanquinLight';
     color: #000000;
     margin-right: 10px;
     margin-left: 10px;
@@ -67,7 +82,7 @@ font-family: 'roboto1';
 }
 .mensajecontenedorAI {
   background-color:rgb(255, 255, 255);
-  margin-left:320px;
+  margin-left: 20px;
   margin-right: auto;
   max-width: 40%;
 

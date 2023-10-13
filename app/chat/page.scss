@@ -1,9 +1,36 @@
 @import 'app/variable.scss';
 
+@font-face {
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
+}
 
-  
-  
+
+.cartelera {
+border: none;
+background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
+  padding: 10px;
+  border-radius: 20px;
+  width: 1000px;
+  margin: 0 auto; 
+  overflow-y: scroll; 
+  box-shadow: 1px 1px 0.1px #0011ff13;
+ height: 340px; 
+
+ margin-bottom: 8px;
+}
+
+
+.cartelera::-webkit-scrollbar {
+  width: 0.5em; 
+}
+
+.cartelera::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
   .BARRABUSQUEDACHAT input {
+    box-shadow: 1px 1px 0.1px #00000013;
     display: flex;
     text-align: left; 
     align-items: center;
@@ -12,13 +39,13 @@
     color: $color-letra;
     border: none;
     border-radius: 22px;
-    height: 120px;
+    height: 60px;
     align-items: center;
-    background-color: transparent;
-    font-family:'roboto1';
+    background-color: rgb(241, 240, 240);
+    font-family:'uno';
     width: 850px;
     margin-bottom: 289px;
-    max-height: 200px;
+
     resize: vertical;
     overflow-y: auto;
     *:focus {
@@ -32,7 +59,7 @@
         align-items: center;
         justify-content: center;
         opacity: 0.6;
-        font-family: 'roboto1', sans-serif;
+        font-family: 'uno', sans-serif;
         margin-left: 200px;
         font-size: 15px;
     }
@@ -52,7 +79,7 @@
    &[value] {
       font-weight:bolder;
       font-size: 15px;
-      font-family:'roboto1', sans-serif;
+      font-family:'uno', sans-serif;
       color: $color-letra;
       justify-content: center;
       align-items: center;
@@ -67,13 +94,15 @@
     display: flex;
     background: none;
     border: none;
-    color: $color-letra;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 20px;
   margin-top: -323px;
      margin-left: 1112px;
      margin-bottom: 295px;
-    
-
+    background-color: rgb(0, 0, 0);
+     font-family: 'uno', sans-serif;
+     box-shadow: 1px 1px 0.1px #00000013;
   }
 

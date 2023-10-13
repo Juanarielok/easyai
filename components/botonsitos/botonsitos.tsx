@@ -57,22 +57,22 @@ export default function botonsitos() {
 
     <div className="BOTONSITOS">
 
-      <Link className='link4' href="/chat">
+      <Link className='link4' href="/Login">
 
 
         <img
-          className='irvideo'
-          src={hovered1 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          className='iraudio'
+          src={hovered1 ? "/icons/AUDIO.png" : "/icons/AUDIO.png"}
           onMouseOver={handleMouseOver1}
           onMouseOut={handleMouseOut1}
         />
 
 
-
+{hovered1 && <div className='text02'>Artificial audio</div>}
 
       </Link>
 
-      <Link className='link3' href="/chat">
+      <Link className='link3' href="/Login">
 
 
         <img
@@ -81,7 +81,7 @@ export default function botonsitos() {
           onMouseOver={handleMouseOver2}
           onMouseOut={handleMouseOut2}
         />
-
+{hovered2 && <div className='text0'>Generate pic</div>}
 
 
 
@@ -91,33 +91,20 @@ export default function botonsitos() {
 
 
         <img
-          className='irimagenes'
-          src={hovered3 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
+          className='irchat'
+          src={hovered3 ? "/icons/CHATT.png" : "/icons/CHATT.png"}
           onMouseOver={handleMouseOver3}
           onMouseOut={handleMouseOut3}
         />
 
-
-
-
-      </Link>
-
-
-
-      <Link className='link1' href="/chat">
-
-
-        <img
-          className='irchat'
-          src={hovered4 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
-          onMouseOver={handleMouseOver4}
-          onMouseOut={handleMouseOut4}
-        />
-
-
+{hovered3 && <div className='text01'>Go chat</div>}
 
 
       </Link>
+
+
+
+
 
 
 

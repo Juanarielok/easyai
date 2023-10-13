@@ -19,11 +19,11 @@ function App() {
 
 
 
-      <Barrabusqueda />
+     
 
 
       <div className='footer-app'>
-        <Footer mostrarDonacion={true} />
+   
       </div>
 
 

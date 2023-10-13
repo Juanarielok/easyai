@@ -15,20 +15,20 @@ return(
 
 
     <div className="contenedor">
-    <div className="columna">
-      <button className="boton">Collaborative Resources 🌐</button>
-      <button className="boton">Text Summarize 📚</button>
-    </div>
-    <div className="columna">
-      <button className="boton">Academic Results 🎓</button>
-      <button className="boton">Short Resume 📑</button>
+  
+      <button className="boton">Collaborative Resources  <img className="iconito" src="/icons/books.png"/> </button>
+      <button className="boton">Text Summarize <img className="iconito" src="/icons/book.png"/> </button>
+
+
+      <button className="boton">Academic Results  <img className="iconito" src="/icons/vocabulary.png"/> </button>
+      <button className="boton">Short Resume  <img className="iconito" src="/icons/file-star.png"/> </button>
 
       <Link className='trans1' href="/chat/questions"> 
 
-      <button className='botono'>Students Aid 📖</button>
+      <button className='botono'>Students Aid <img className="iconito" src="/icons/accessible.png"/> </button>
 
       </Link>
-    </div>
+   
     </div>
 );
 

@@ -24,48 +24,34 @@
   }
   
   
- 
+  @font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
 
+.enlace-login{
+  font-family: 'uno';
+}
+
+  h1{
+
+    font-family: 'uno';
+  }
+
+  h2{
+
+    font-family: 'uno';
+  }
+
+  .texto{
+
+    font-family: 'uno';
+  }
+
+  .principal{
+
+    font-family: 'uno';
+  }
   
-  .BARRAemail {
-    margin-top: 100px;
-    color: #0410fd;  
-    display: flex;
-    color: #0410fd;
-    font-family: 'roboto1', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .BARRAemail {
-    margin-top: 100px;
-    color: #0410fd;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .cartelin {
-    margin-bottom: 5px;
-    margin-right: 176px;
-  }
-  .NOMBRE {
-    margin-top: 600px;
-    color: #0410fd;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-   
-  .cartelin {
-    margin-bottom: 5px;
-    margin-right: 176px;
-  }
-
-
-  .new.box {
-    margin-bottom: 100px;
-    margin-right: 176px;
-
-  }
+  .contenedor-titulo{ font-family: 'uno';  }

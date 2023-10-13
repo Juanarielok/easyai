@@ -36,11 +36,11 @@ function Page() {
   }
 
   return (
-    <div className="App1">
+    <div className="pepe">
 
       
 
-      <div>
+      <div className='cartelera' >
         {mensagesVista.map((message, index) => (
           <Mensajechat key={index} mensaje={message} />
         ))}
@@ -58,7 +58,7 @@ function Page() {
           Send
         </button>
       </div>
-      <Footer mostrarDonacion={false} />
+      
     </div>
   );
 }

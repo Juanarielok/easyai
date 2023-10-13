@@ -23,7 +23,13 @@
     src: url('/fuentes/ropa2.ttf') format('opentype');
 }
 
-.titulo {
+@font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
+
+
+.sobrenosotros{  .titulo {
     display: flex;
     word-break: break-word;
     justify-content: center;
@@ -33,5 +39,5 @@
     margin-left: 30px;
     left: 0;
     color: #000000;
-    font-family: 'roboto1', sans-serif;
-}
+    font-family: 'uno';
+}  }

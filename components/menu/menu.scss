@@ -1,11 +1,9 @@
 @import 'app/variable.scss';
 
-
 @font-face {
-  font-family: 'ubu';
-  src: url('/fuentes/uu.ttf') format('opentype');
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
 }
-
 
 
 .CONTENEDOR{
@@ -16,14 +14,16 @@ position: absolute;
 }
 
 .BOTON{
- 
+  margin-top: 20px;
+margin-left: -10px;
   font-size: 14px;
   margin-right: 10px;
   border: none;
   font-weight: bolder;
-  color: #000000;
+  color: #646464;
+  opacity: 1;
   background: transparent;
-  font-family: 'ubu';
+  font-family: 'uno';
  
 }
 
@@ -32,10 +32,9 @@ position: absolute;
   cursor: pointer;
 }
 .link1 {
-
+width: 50px;
   color: transparent;
 }
-
 
 
 

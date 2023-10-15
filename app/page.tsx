@@ -5,6 +5,7 @@ import Barrabusqueda from '../components/barrabusqueda/barrabusqueda'
 import Botonsitos from '../components/botonsitos/botonsitos'
 import React from 'react';
 import './page.scss';
+import Header from '@/components/header/header';
 
 function App() {
 
@@ -12,8 +13,8 @@ function App() {
   return (
 
     <div className="App">
-
-
+<Header/>
+<label className="marquesina"> Choose the AI ​​tool you need today </label>
 
       <Botonsitos />
 
@@ -22,13 +23,11 @@ function App() {
      
 
 
-      <div className='footer-app'>
    
       </div>
 
 
 
-    </div>
 
 
 

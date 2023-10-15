@@ -41,14 +41,14 @@ export default function RootLayout({
     
       <head>
         <title>
-          Easy AI
+    AI Easy!
         </title>
       </head>
       <body className={estilos}>
 
      
 
-        <Header />
+        
 
         {children}
 

@@ -57,6 +57,8 @@ export default function botonsitos() {
 
     <div className="BOTONSITOS">
 
+      
+
       <Link className='link4' href="/Login">
 
 
@@ -72,11 +74,11 @@ export default function botonsitos() {
 
       </Link>
 
-      <Link className='link3' href="/Login">
+      <Link className='linkimagen' href="/Login">
 
 
         <img
-          className='irmusica'
+          className='irimagen'
           src={hovered2 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
           onMouseOver={handleMouseOver2}
           onMouseOut={handleMouseOut2}

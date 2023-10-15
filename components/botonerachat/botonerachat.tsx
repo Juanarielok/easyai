@@ -16,16 +16,16 @@ return(
 
     <div className="contenedor">
   
-      <button className="boton">Collaborative Resources  <img className="iconito" src="/icons/books.png"/> </button>
-      <button className="boton">Text Summarize <img className="iconito" src="/icons/book.png"/> </button>
+      <button className="boton">  <img className="iconito" src="/icons/books.png"/> Collaborative Resources  </button>
+      <button className="boton"><img className="iconito" src="/icons/book.png"/> Text Summarize  </button>
 
 
-      <button className="boton">Academic Results  <img className="iconito" src="/icons/vocabulary.png"/> </button>
-      <button className="boton">Short Resume  <img className="iconito" src="/icons/file-star.png"/> </button>
+      <button className="boton"><img className="iconito" src="/icons/vocabulary.png"/>  Academic Results  </button>
+      <button className="boton"><img className="iconito" src="/icons/file-star.png"/>  Short Resume  </button>
 
       <Link className='trans1' href="/chat/questions"> 
 
-      <button className='botono'>Students Aid <img className="iconito" src="/icons/accessible.png"/> </button>
+      <button className='botono'><img className="iconito" src="/icons/accessible.png"/>Students Aid  </button>
 
       </Link>
    

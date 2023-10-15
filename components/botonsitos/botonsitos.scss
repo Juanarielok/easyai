@@ -1,5 +1,5 @@
 .BOTONSITOS {
- 
+
     margin-top: 90px;
     margin-bottom: 40px;
     display: flex;
@@ -13,64 +13,71 @@
     src: url('/fuentes/uno.ttf') format('opentype');
   }
 
-.text0{
-  color: rgb(80, 80, 80);
-font-family: "uno";
-text-decoration-line: none;
-border: none;
-text-decoration: none; 
-}
 
+
+ 
+
+  .linkimagen{
+      
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+   
+     margin-left: 90px;
+      }
   
  .irchat {
-  width: 100px;
-  height: 100px;
-margin-top: 10px;
-   margin-left: 20px;
+  width: 150px;
+  height: 150px;
+margin-top: -65px;
+   margin-left: 60px;
    cursor: pointer;}
 
-   
- .link3 {
-  cursor: pointer;
-  width: 90px;
-  height: 90px;
-   margin-left: 28px;}
+
 
    .iraudio {
     margin-top: 11px;
-    width: 100px;
-    height: 100px;
-     margin-left: 20px;
+    width: 150px;
+    height: 150px;   text-decoration: none;
+    
      cursor: pointer;}
 
-     .link2{
-      margin-left: 10px;
-      margin-top: -20px;
-      width: 90px;
-      height: 90px;
+
+ .link2{
+     width: 0px;
+    height: 0px;
    text-decoration: none;
+   
      }
 
-     .link3{
-      
+     .link4{
+    margin-left: -190px;
+      margin-top: -58px;
+      margin-right: 40px;
       width: 90px;
       height: 90px;
-      
       text-decoration: none;
         }
 
-        .link4{
-          margin-top: -20px;
-          margin-right: 30px;
-          width: 90px;
-          height: 90px;
-          text-decoration: none;
+
+
+            .text0{
+              color: rgb(80, 80, 80);
+            font-family: "uno";
+            text-decoration-line: none;
+            border: none;
+            text-decoration: none; 
             }
+
+
+
 
           .text01{
             width: 200px;
             color: rgb(80, 80, 80);
-            margin-left: 33px;
+            margin-left: 95px;
 font-family: "uno";
             align-items: center;
 

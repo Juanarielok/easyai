@@ -4,3 +4,17 @@
     left: 0;
     width: 100%;
 }
+
+@font-face {
+    font-family: 'uno';
+    src: url('/fuentes/uno.ttf') format('opentype');
+  }
+
+
+.marquesina{
+    display: flex;
+  justify-content: center; 
+  align-items: center;
+ font-family: 'uno';
+    
+}

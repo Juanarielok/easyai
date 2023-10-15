@@ -1,0 +1,102 @@
+@import 'app/variable.scss';
+
+@font-face {
+  font-family: 'roboto1';
+  src: url('/fuentes/ubuntu90.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'uno';
+  src: url('/fuentes/uno.ttf') format('opentype');
+}
+
+
+   
+
+   .logo2 {
+     display: inline;
+     margin-left: -182px;
+margin-top: 22px;
+     font-size: 10px;
+     color:#ffffff;
+  
+     font-family: 'uno';
+
+     outline: none;
+     text-decoration: none;
+     text-shadow:
+     1px 0px #ff0055,
+     -1px 0px #ff0055,
+     0px 1px #ff0055,
+     0px -1px #ff0055,
+     1px 1px #ff0055,
+     -1px 1px #ff0055,
+     1px -1px #ff0055,
+     -1px -1px #ff0055,
+     2px 0px #646464,
+     -2px 0px #646464,
+     0px 2px #646464,
+     0px -2px #646464,
+     2px 2px #646464,
+     -2px 2px #646464,
+     2px -2px #646464,
+     -2px -2px #646464;
+    
+   
+   } 
+
+/* */
+
+
+/* text-shadow:
+     1px 0px #ffffff,
+     -1px 0px #ffffff,
+     0px 1px #ffffff,
+     0px -1px #ffffff,
+     1px 1px #ffffff,
+     -1px 1px #ffffff,
+     1px -1px #ffffff,
+     -1px -1px #ffffff,
+     2px 0px #646464,
+     -2px 0px #646464,
+     0px 2px #646464,
+     0px -2px #646464,
+     2px 2px #646464,
+     -2px 2px #646464,
+     2px -2px #646464,
+     -2px -2px #646464;*/
+
+   
+
+
+
+   .trans {
+    margin-top:-20px;
+    margin-left: 60px;
+margin-right: 200px;
+     color: transparent;
+width: 150px;
+
+font-family: 'roboto1';
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+   }
+
+   /* text-shadow: 
+  2px 0px #8121ff,     
+  -2px 0px #8121ff,    
+  0px 2px #8121ff,    
+  0px -2px #8121ff,    
+  1px 1px #8121ff,    
+  -1px 1px #8121ff,    
+  1px -1px #8121ff,    
+  -1px -1px #8121ff;   */
+
+  /* text-shadow: 
+  2px 0px #D21541,     
+  -2px 0px #D21541,    
+  0px 2px #D21541,    
+  0px -2px #D21541,   */

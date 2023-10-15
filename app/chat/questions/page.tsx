@@ -5,6 +5,8 @@ import {responderPregunta} from '@/services/chat';
 import RespuestaSobreTexto from '@/models/respuesta-sobre-texto';
 import RespuestaChat from '@/models/chat';
 import { AxiosResponse } from 'axios';
+
+import Header from '@/components/header/header';
 function Page() {
 
   let [textito, setTextito] = useState('');
@@ -41,7 +43,7 @@ let [respuesta1,setrespuesta1]=useState('');
   return (
     <div className="App1">
     
-
+  
 
       <div className="BARRALIBRO">
       <textarea className='LEERTEXTO' value={libro}   onChange={(evento) => setlibro(evento.target.value)}

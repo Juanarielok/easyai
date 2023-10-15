@@ -1,6 +1,6 @@
 
 body {
-
+  background-image: url("/icons/background1.jpg");
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size:cover;
@@ -14,7 +14,7 @@ body {
 
 /*
 
-    background-image: url("/icons/back120.png");
+  
 
 */
 
@@ -30,8 +30,8 @@ body {
   
 
 body.chatear{
-    
-    background-size:contain;
+  background-image: url("/icons/fac4.jpg");
+    background-size:cover;
 }
 
 body.registrar{

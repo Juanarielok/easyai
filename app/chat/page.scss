@@ -5,28 +5,62 @@
   src: url('/fuentes/uno.ttf') format('opentype');
 }
 
+.archivo{
+  border:none;
+  background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
+    padding: 10px;
+    border-radius: 5px;
+    width: 106px;
+    margin: 0 auto; 
+display: flex;
+margin-left: 2px;
+margin-top: -588px;
+    box-shadow: 1px 1px 0.1px #0011ff13;
+   height: 560px; 
+  
+   margin-bottom: 8px;
+
+
+}
+
+
+.archivolabel{
+  color:rgba(0, 0, 0, 0.377);
+margin-left: 20px;
+  font-family: 'uno';
+  font-size: 13px;
+  margin-top: 330px;
+}
+
 
 .cartelera {
-border: none;
+border:none;
 background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
   padding: 10px;
-  border-radius: 20px;
-  width: 1000px;
+  border-radius: 5px;
+  width: 1200px;
   margin: 0 auto; 
   overflow-y: scroll; 
+  margin-left: 130px;
   box-shadow: 1px 1px 0.1px #0011ff13;
- height: 340px; 
-
+ height: 560px; 
+margin-top: -50px;
  margin-bottom: 8px;
 }
 
 
 .cartelera::-webkit-scrollbar {
   width: 0.5em; 
+  background-color: rgba(109, 109, 109, 0.315);
+
 }
 
 .cartelera::-webkit-scrollbar-thumb {
-  background-color: #888;
+  
+  background-color: rgba(109, 109, 109, 0.315);
+  border: 1px solid rgba(179, 179, 243, 0);
+  max-height: 40px;
+  border-radius: 5px;
 }
 
   .BARRABUSQUEDACHAT input {
@@ -38,7 +72,7 @@ background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250
     margin: 0 auto;
     color: $color-letra;
     border: none;
-    border-radius: 22px;
+    border-radius: 4px;
     height: 60px;
     align-items: center;
     background-color: rgb(241, 240, 240);
@@ -94,7 +128,7 @@ background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250
     display: flex;
     background: none;
     border: none;
-    border-radius: 9px;
+    border-radius: 3px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 20px;

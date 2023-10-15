@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev\" \"mockserver -p 8080 -m mockserver\"",
+    "dev-backend": "env-cmd -f ./.env.dev-backend next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -27,12 +28,13 @@
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/lodash-es": "^4.17.9",
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
     "concurrently": "^8.2.1",
+    "env-cmd": "^10.1.0",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
     "mockserver": "^3.1.1",
-    "@types/node": "20.6.0",
-    "@types/react": "18.2.21",
     "typescript": "5.2.2"
   }
 }

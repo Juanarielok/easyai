@@ -9,7 +9,6 @@ export default function MenuDesplegable () {
         mostrarMenu(!menuBoton);
     }
 
-
     return(
         <div 
             className='estilo-menu-desplegable'

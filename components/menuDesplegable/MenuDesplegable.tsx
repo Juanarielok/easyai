@@ -9,10 +9,22 @@ export default function MenuDesplegable () {
         mostrarMenu(!menuBoton);
     }
 
+
     return(
-        <div className='estilo-menu-desplegable'  onClick={manejarClick} style= {{transition: menuBoton ? "transform 2s ease-in" : ""}}>
-            {menuBoton ? <img src='/icons/menu-desplegable.png' className='menu-icono'>
-            </img> : <Menu />}   
+        <div 
+            className='estilo-menu-desplegable'
+            onClick={manejarClick} 
+            style={{
+                transition: "width 1.5s linear",
+                width: menuBoton ? "0%" : "10%",
+                position: menuBoton ? "inherit" : "fixed",
+                right: menuBoton ? "inherit" : "0px"
+              }}
+        >
+            {menuBoton && <img src='/icons/menu-desplegable.png' className='menu-icono' alt='Menu Icono'></img>}
+
+            {!menuBoton && <Menu />}   
+
         </div>
-    );
+);
 }

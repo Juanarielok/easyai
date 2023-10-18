@@ -1,13 +1,26 @@
-import RespuestaChat from "@/models/chat";
-import RespuestaSobreTexto from "@/models/respuesta-sobre-texto";
+import recibirmensaje from "@/models/recibirmensaje"
+import enviarmensaje from "@/models/enviarmensaje"
+
 import axios, { AxiosResponse } from "axios";
 
-function verIArespuesta() : Promise<AxiosResponse<RespuestaChat>> {
-  return axios.post<RespuestaChat>(process.env.NEXT_PUBLIC_BACKEND_URL + '/chat');
+
+    
+
+
+function verIArespuesta(mensajetexto:string) : Promise<AxiosResponse<recibirmensaje>> {
+  let mensajito: enviarmensaje = {
+    input:  {
+      text: mensajetexto,
+      generated_responses: [],
+      past_user_inputs: []
+    }
+
+  }
+  return axios.post<recibirmensaje>(process.env.NEXT_PUBLIC_BACKEND_URL + '/huggingface',
+    mensajito
+  );
 }
 
-export function responderPregunta(contexto: string, pregunta : string) : Promise<AxiosResponse<RespuestaSobreTexto>> {
-  return axios.post<RespuestaSobreTexto>(process.env.NEXT_PUBLIC_BACKEND_URL + '/respuestasobretexto');
-}
+
 
 export default verIArespuesta;

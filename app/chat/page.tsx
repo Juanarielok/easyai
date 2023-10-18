@@ -1,40 +1,29 @@
 'use client'
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import './page.scss';
 import Footer from '../../components/footer/footer';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
 import verIArespuesta from '@/services/chat';
-import RespuestaChat, { Mensaje } from '@/models/chat';
+import Conversation from '@/models/Conversation';
 import { clone } from 'lodash-es';
 import { AxiosResponse } from 'axios';
 import FancyHeader from '@/components/FancyHeader/FancyHeader';
+import recibirmensaje from "@/models/recibirmensaje"
+import enviarmensaje from "@/models/enviarmensaje"
 
 function Page() {
-  const [textito, setTextito] = useState('');
-  const [mensagesVista, setMessages] = useState<Mensaje[]>([]);
 
-  function ENVIARMENSAJE() {
-    const mensajesOriginal = clone(mensagesVista);
-    const mensajeHUMANO: Mensaje = {
-      esRespuestaIA: false,
-      texto: textito
-    };
 
-    setTextito('');
-    setMessages([...mensagesVista, mensajeHUMANO]);
+let [textito,setTextito]=useState<string>("");
+ let [elchat,setelchat]=useState<string[]>([]);
+ 
+function ENVIARMENSAJE () {
 
-    recibirRespuestaIA(mensajeHUMANO, mensajesOriginal);
-  }
 
-  function recibirRespuestaIA(mensajehumano: Mensaje, mensajesOriginal: Mensaje[]) {
-    verIArespuesta().then((respuesta : AxiosResponse<RespuestaChat>) => {
-      setMessages([...mensajesOriginal, mensajehumano, {
-        texto : respuesta.data.generatedResponse,
-        esRespuestaIA : true
-      }]);
-    });
-  }
+  setelchat([...elchat, textito]);
+  setTextito("")
+}
 
   return (
     <div className="pepe">
@@ -42,7 +31,7 @@ function Page() {
   <FancyHeader/>
       <div className='cartelera' >
         
-        {mensagesVista.map((message, index) => (
+        {elchat.map((message, index) => (
           <Mensajechat key={index} mensaje={message} />
         ))}
         

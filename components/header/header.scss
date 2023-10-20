@@ -1,11 +1,11 @@
-.headerino{
+.encabezado-estilo{
+    display: flex;
+    flex-direction: row;
 
+    height: 10%;
 
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90px;
-   
-   
-
+    box-sizing: content-box;
 }
 /* background-color: #0272D2; */

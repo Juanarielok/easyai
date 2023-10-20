@@ -7,17 +7,23 @@
 
 
 .CONTENEDOR{
-margin-right: auto;
-margin-left: 1000px;
-margin-top: -25px;
-position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 100vh;
+
+  background-color: rgba(202, 198, 198, 0.217);
+  overflow: hidden;
+  transition: transform 1s linear;
 }
 
 .BOTON{
+  width: 100%;
+  height: 100%;
  
-margin-left: -10px;
   font-size: 14px;
-  margin-right: 10px;
   border: none;
   font-weight: bolder;
   color: #646464;
@@ -30,11 +36,14 @@ margin-left: -10px;
 
 .BOTON:hover {
   cursor: pointer;
+  background-color: rgba(37, 86, 185, 0.054);
 }
+
 .link1 {
-width: 50px;
-  color: transparent;
+  height: 25%;
+  width: 100%
 }
+
 
 
 

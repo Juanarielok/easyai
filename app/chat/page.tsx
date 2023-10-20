@@ -1,5 +1,5 @@
 'use client'
-import React, { use, useState } from 'react';
+import React, { ReactNode, use, useState } from 'react';
 import './page.scss';
 import Footer from '../../components/footer/footer';
 import Botonerachat from '../../components/botonerachat/botonerachat';
@@ -17,23 +17,66 @@ function Page() {
 
 let [textito,setTextito]=useState<string>("");
  let [elchat,setelchat]=useState<string[]>([]);
+ let [mensajesAI,setmensajesAI]=useState<string[]>([]);
+
+
  
+ 
+function metermensajeAI () {
+
+let todosmensajes:ReactNode[] = [];
+
+
+for (let i = 0; i < (elchat.length); i++) {
+  
+    todosmensajes.push(<Mensajechat mensaje={elchat[i]} esAI={false} /> );
+  
+  if (i < mensajesAI.length) {
+   todosmensajes.push(<Mensajechat mensaje={mensajesAI[i]} esAI={true} /> );
+  }
+
+
+
+  }/// por cada vuelta del bucle que meta uno del usuario y otro de la ia
+return todosmensajes;
+}
+
+
+
 function ENVIARMENSAJE () {
 
+verIArespuesta(textito).then(function(respuesta:AxiosResponse<recibirmensaje>){
+
+let respuestita:recibirmensaje = respuesta.data ;
+
+let mensajeAPI:string = respuestita.generated_text;
+setmensajesAI([...mensajesAI, mensajeAPI])
+})
 
   setelchat([...elchat, textito]);
   setTextito("")
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="pepe">
 
   <FancyHeader/>
       <div className='cartelera' >
-        
-        {elchat.map((message, index) => (
-          <Mensajechat key={index} mensaje={message} />
-        ))}
+     
+       {metermensajeAI()}
         
       </div>
       <div className='archivo'> <label className='archivolabel'>_____________ Archived chats </label> <Botonerachat/> </div>

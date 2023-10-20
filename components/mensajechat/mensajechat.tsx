@@ -1,31 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './mensajechat.scss';
 import Id from '@/components/id';
-import { Mensaje } from '@/models/chat';
+
 
 interface MensajechatProps {
-  mensaje: Mensaje,
+  mensaje: string,
+  esAI: boolean 
 }
 
-const Mensajechat = ({ mensaje } : MensajechatProps) => {
+const Mensajechat = ({ mensaje, esAI } : MensajechatProps) => {
 
   function nombredeclase() {
-    if (mensaje.esRespuestaIA) {
+    if (!esAI){      return 'mensajecontenedor'  } else {
+      
       return 'mensajecontenedorAI'
-    } else {
-      return 'mensajecontenedor'
+
     }
+ 
+    
   }
 
-function nombreestilo () {
-
-  if (mensaje.esRespuestaIA){
-    return 'IDartificial'
-  } else {
-
-    return 'IDhumana'
-  }
-}
 
 
 
@@ -34,15 +28,16 @@ function nombreestilo () {
 
 
 
-  return (
-    <div>  <p className={nombreestilo()}>
+  return (  <div>  <p className='IDhumana'>
     <Id />  
-  </p> 
-      <div className={nombredeclase()}  >
-        <h4 className='contenidomensajeAI'>{mensaje.texto}  </h4>
+  </p>
+    <div className={nombredeclase()} > 
+      <div  >
+        <h4 className='contenidomensajeAI'>{mensaje}  </h4>
        <p className='hora'> {hora.toLocaleTimeString()}</p>
       </div>
     
+    </div>
     </div>
   );
 };

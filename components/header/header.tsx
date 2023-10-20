@@ -8,21 +8,10 @@ import MenuDesplegable from "../menuDesplegable/MenuDesplegable";
 export default function header() {
 
     return(  
-    
-   <div className="headerino"> 
-        <Logo/> 
-         {/* El componente Menu se quito y se debe colocar dentro del nuevo componente MenuDesplegable. */}
-        <MenuDesplegable /> 
-   </div>
-    
-    
-    
-    
-    )
-    
-    
-    
-    
-    
-    };
+          <div className="encabezado-estilo"> 
+               <Logo/> 
+                    {/* El componente Menu se quito y se debe colocar dentro del nuevo componente MenuDesplegable. */}
+               <MenuDesplegable /> 
+          </div>
+   )};
     

@@ -4,10 +4,19 @@ import './menu-estilo.scss';
 
 export default function MenuDesplegable () {
     const [menuBoton, mostrarMenu] = useState(true);
+
     const toggleMenu = useRef<HTMLDivElement>(null);
 
-    function manejarClick () {
+    function manejarClick (event) {
+      const anchoActual = event.target.style.width;
+
+      if (anchoActual == '0%')
+      {
         mostrarMenu(!menuBoton);
+      }
+      else {
+        mostrarMenu(false);
+      }
     }
 
 
@@ -31,12 +40,12 @@ export default function MenuDesplegable () {
             className='estilo-menu-desplegable'
             onClick={manejarClick} 
             style={{
-                transition: menuBoton ? "none" : "width 0.4s linear",
-                width: menuBoton ? "0%" : "10%",
+                transition: menuBoton ? "width 1.0 ease-in-out" : "width 0.6s linear",
+                width: menuBoton ? "5%" : "15%",
                 position: menuBoton ? "inherit" : "fixed",
-                right: menuBoton ? "inherit" : "0px",
-                marginRight: menuBoton ? "60px" : "5px",
-                marginTop: menuBoton ? "15px" : "0px"
+                marginTop: menuBoton ? "15px" : "0px", 
+                marginLeft: menuBoton ? "auto" : "85%",
+                borderRadius: menuBoton ? "0px" : "20px 0 0 20px"
               }}
             ref= {toggleMenu}
         >

@@ -1,20 +1,19 @@
-.footer-app {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
+@font-face {
+  font-family: 'uno';
+  src: url('/public/fuentes/Palanquin/Palanquin-Bold.ttf') format('opentype');
 }
 
-@font-face {
-    font-family: 'uno';
-    src: url('/fuentes/uno.ttf') format('opentype');
-  }
-
-
-.marquesina{
-    display: flex;
-  justify-content: center; 
+.marquesina {
+  display: flex;
+  justify-content: center;
   align-items: center;
- font-family: 'uno';
-    
+  font-family: 'uno';
+  font-size: 22px;
+}
+
+.footer-app {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
 }

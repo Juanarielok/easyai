@@ -1,11 +1,12 @@
-.encabezado-estilo{
+.encabezado-estilo {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     height: 10%;
 
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    padding: 0 3%;
 }
-/* background-color: #0272D2; */

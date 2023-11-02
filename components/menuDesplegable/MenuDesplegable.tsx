@@ -7,16 +7,8 @@ export default function MenuDesplegable () {
 
     const toggleMenu = useRef<HTMLDivElement>(null);
 
-    function manejarClick (event) {
-      const anchoActual = event.target.style.width;
-
-      if (anchoActual == '0%')
-      {
+    function manejarClick () {
         mostrarMenu(!menuBoton);
-      }
-      else {
-        mostrarMenu(false);
-      }
     }
 
 
@@ -33,11 +25,12 @@ export default function MenuDesplegable () {
           document.removeEventListener('mousedown', handleClickOutside);
         };
       }, []);
+
+
       
 
     return(
         <div 
-            className='estilo-menu-desplegable'
             onClick={manejarClick} 
             style={{
                 transition: menuBoton? "none" : "width 0.5s ease-in-out",

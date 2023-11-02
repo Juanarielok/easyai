@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Bold';
+  src: url('/fuentes/HubotSans/HubotSans-Light.woff2');
+}
+
+
 
 body {
   background-image: url("/icons/background1.jpg");
@@ -11,13 +17,6 @@ body {
     opacity: 1;
 
 }
-
-/*
-
-  
-
-*/
-
   
   @keyframes fadeIn {
     0% {

@@ -6,7 +6,6 @@ import React from 'react';
 import Encabezado from './Encabezado/Encabezado';
 import BannerPrincipal from './BannerPrincipal/BannerPrincipal';
 import BannerHistoria from './BannerHistoria/BannerHistoria';
-import Footer from '@/components/footer/footer';
 
 function App() {
   return (

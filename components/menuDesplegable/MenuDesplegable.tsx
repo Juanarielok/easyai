@@ -39,7 +39,8 @@ export default function MenuDesplegable () {
                 marginTop: menuBoton ? "0px" : "0px",
                 top: menuBoton ? "none" : "0px", 
                 right: "0",
-                marginLeft: menuBoton ? "auto" : "85%"
+                marginLeft: menuBoton ? "auto" : "85%",
+                zIndex: menuBoton ? "none" : "999"
               }}
             ref= {toggleMenu}
         >

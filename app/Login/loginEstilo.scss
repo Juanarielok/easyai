@@ -18,10 +18,10 @@
     }
 
     h2 {
-      font-family: 'uno';
+      font-family: 'MonaSans-Light';
       font-weight: 300;
       top: -10px;
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
@@ -33,16 +33,17 @@
     width: auto;
     justify-content: space-between;
     margin-top: 3%;
+    
   }
 
   .textoLogin {
-    font-family: 'Bold';
+    font-family: 'MonaSans-Light';
     display: relative;
     height: 100px;
     width: 400px;
     border-radius: 10px;
     border: 0.1px solid rgba(0, 0, 0, 0.731);
-    font-size: 30px;
+    font-size: 22px;
     font-weight:200;
     text-align: center;
     margin-right: 10px;
@@ -62,7 +63,7 @@
   }
 
   .boton-login {
-    font-family: 'uno';
+    font-family: 'MonaSans-Light';
     font-size: 20px;
     margin-top: 5%;
     height: 60px;

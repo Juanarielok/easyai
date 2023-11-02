@@ -22,7 +22,8 @@ export default function RootLayout({
 "/": "body",
 "/register": "registrar",
 "/Login": "loguear",
-"/aboutUs":"acerca"
+"/aboutUs":"acerca",
+"/contact": "contacto"
 }
   
   const pathname = usePathname()

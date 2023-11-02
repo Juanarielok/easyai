@@ -2,7 +2,6 @@
 
 import Logo from "../logo/logo";
 import './header.scss'
-import Menu from "../menu/menu";
 import MenuDesplegable from "../menuDesplegable/MenuDesplegable";
 
 export default function header() {

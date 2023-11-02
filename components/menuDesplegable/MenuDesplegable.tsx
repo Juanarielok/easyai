@@ -7,16 +7,8 @@ export default function MenuDesplegable () {
 
     const toggleMenu = useRef<HTMLDivElement>(null);
 
-    function manejarClick (event) {
-      const anchoActual = event.target.style.width;
-
-      if (anchoActual == '0%')
-      {
+    function manejarClick () {
         mostrarMenu(!menuBoton);
-      }
-      else {
-        mostrarMenu(false);
-      }
     }
 
 
@@ -33,25 +25,26 @@ export default function MenuDesplegable () {
           document.removeEventListener('mousedown', handleClickOutside);
         };
       }, []);
+
+
       
 
     return(
         <div 
-            className='estilo-menu-desplegable'
             onClick={manejarClick} 
             style={{
-                transition: menuBoton ? "width 1.0 ease-in-out" : "width 0.6s linear",
+                transition: menuBoton? "none" : "width 0.5s ease-in-out",
                 width: menuBoton ? "5%" : "15%",
                 position: menuBoton ? "inherit" : "fixed",
-                marginTop: menuBoton ? "15px" : "0px", 
+                marginTop: menuBoton ? "0px" : "0px",
+                top: menuBoton ? "none" : "0px", 
+                right: "0",
                 marginLeft: menuBoton ? "auto" : "85%",
-                borderRadius: menuBoton ? "0px" : "20px 0 0 20px"
+                zIndex: menuBoton ? "none" : "999"
               }}
             ref= {toggleMenu}
         >
-            {menuBoton && <img src='/icons/menu-desplegable.png' className='menu-icono' alt='Menu Icono'></img>}
-
-            {!menuBoton && <Menu />}   
+            {menuBoton ? <img src='/icons/menu-desplegable.png' className='menu-icono' alt='Menu Icono'></img> : <Menu />}
 
         </div>
 );

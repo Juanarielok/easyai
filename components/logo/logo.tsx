@@ -11,14 +11,5 @@ return(
     <h4 className='logo1'>AI Easy!</h4>
     <h4 className="loguito">©</h4>
     </Link>
-
-
-
-
 )
-
-
-
-
-
 };

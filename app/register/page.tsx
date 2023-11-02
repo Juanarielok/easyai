@@ -28,7 +28,7 @@ function Registro () {
         <div className="principal">
 
             <div className= "contenedor-titulo">
-                <h1>Don´t have an account at AI Easy?</h1>
+                <p>Don't have an account at AI Easy?</p>
                 <h2>Sign up to gain access to all our features</h2>
             </div>
 

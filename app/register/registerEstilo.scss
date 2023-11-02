@@ -1,50 +1,7 @@
-@font-face {
-  font-family: 'palanquinLight';
-  src: url('/fuentes/Palanquin/Palanquin-ExtraLight.ttf') format('opentype');
-}
-
-@font-face {
-  font-family: 'PalanquinThin';
-  src: url('/public/fuentes/Palanquin/Palanquin-Thin.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'roboto1'; 
-    src: url('/fuentes/roboto1.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'roboto2'; 
-  src: url('/fuentes/roboto2.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'trot'; 
-  src: url('/fuentes/trot.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'ropa'; 
-  src: url('/fuentes/ropa.ttf') format('opentype'); 
-  }
-  
-  @font-face {
-  font-family: 'ropa2'; 
-  src: url('/fuentes/ropa2.ttf') format('opentype'); 
-  }
-
-@font-face {
-  font-family: 'uno';
-  src: url('/fuentes/uno.ttf') format('opentype');
-}
-
-
-  .principal {
+ .principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
-    border-radius: 3px;
   }
 
 
@@ -55,38 +12,38 @@
     align-items: center;
     position: relative;
     height: auto;
-    margin-top: 5%;
-  }
 
-  .contenedor-titulo h1 {
-    font-family: 'uno';
-    top: 200px;
-    font-size: 40px;
-    margin-bottom: -10px;
-  }
+    p {
+      font-family: 'uno';
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
 
-  .contenedor-titulo h2 {
-    font-family: 'uno';
-    font-weight: 300;
-    top: -10px;
+    h2 {
+      font-family: 'MonaSans-Light';
+      font-weight: 300;
+      top: -10px;
+      font-size: 20px;
+    }
   }
-
+  
   .contenedor-label {
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 3%;
   }
 
   .texto {
-    font-family: 'uno';
+    font-family: 'MonaSans-Light';
     margin-top: 10%;
     display: relative;
     height: 100px;
     width: 400px;
     border-radius: 10px;
     border: 0.1px solid rgba(0, 0, 0, 0.731);
-    font-size: 30px;
+    font-size: 22px;
     font-weight:200;
     text-align: center;
   }
@@ -114,11 +71,11 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin-top: 5%;
+    margin-top: 2%;
+  }
 
-    h3 {
-      font-family: 'uno';
-    }
+  .contenedor-boton > h3 {
+    font-family: 'MonaSans-Light';
   }
 
   .enlace-login {
@@ -130,7 +87,7 @@
   }
 
   .botonEnviar {
-    font-family: 'uno';
+    font-family: 'MonaSans-Light';
     height: 60px;
     width: 200px;
     border-radius: 10px;

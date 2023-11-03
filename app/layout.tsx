@@ -1,12 +1,9 @@
 'use client'
 import Header from '@/components/header/header'
 import './layout.scss'
-import Menu from '../components/menu/menu'
-import Logo from '../components/logo/logo'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { keys } from 'lodash-es'
-
 
 
 export default function RootLayout({

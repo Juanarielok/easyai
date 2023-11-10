@@ -1,7 +1,7 @@
 'use client'
 import React, { ReactNode, use, useState } from 'react';
 import './page.scss';
-import Footer from '../../components/footer/footer';
+import Footer from '../../components/pie/PiePagina';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
 import verIArespuesta from '@/services/chat';

@@ -1,51 +1,48 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Menu from '../menu/menu';
 import './menu-estilo.scss';
 
-export default function MenuDesplegable () {
+export default function MenuDesplegable() {
     const [menuBoton, mostrarMenu] = useState(true);
 
     const toggleMenu = useRef<HTMLDivElement>(null);
 
-    function manejarClick () {
+    function manejarClick() {
         mostrarMenu(!menuBoton);
     }
 
-
     useEffect(() => {
-        const handleClickOutside = (event) => {
-          if (toggleMenu.current && !toggleMenu.current.contains(event.target)) {
-            mostrarMenu(true);  
-          }
+        // Definir el tipo de evento aquí
+        const handleClickOutside = (event: MouseEvent) => {
+            // Asegurar que event.target es un Node para usar el método contains
+            if (toggleMenu.current && !toggleMenu.current.contains(event.target as Node)) {
+                mostrarMenu(true);
+            }
         };
-      
+
         document.addEventListener('mousedown', handleClickOutside);
-      
+
         return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
-      }, []);
+    }, [menuBoton]); // Aquí puede ser importante agregar menuBoton si la lógica del efecto depende de él
 
-
-      
-
-    return(
-        <div 
-            onClick={manejarClick} 
+    return (
+        <div
+            onClick={manejarClick}
             style={{
-                transition: menuBoton? "none" : "width 0.5s ease-in-out",
+                transition: menuBoton ? "none" : "width 0.5s ease-in-out",
                 width: menuBoton ? "5%" : "15%",
                 position: menuBoton ? "inherit" : "fixed",
-                marginTop: menuBoton ? "0px" : "0px",
-                top: menuBoton ? "none" : "0px", 
+                marginTop: "0px",
+                top: menuBoton ? "none" : "0px",
                 right: "0",
                 marginLeft: menuBoton ? "auto" : "85%",
-                zIndex: menuBoton ? "none" : "999"
-              }}
-            ref= {toggleMenu}
+                zIndex: menuBoton ? "auto" : "999" // "none" no es un valor válido para zIndex, debería ser "auto" o un número
+            }}
+            ref={toggleMenu}
         >
             {menuBoton ? <img src='/icons/menu-desplegable.png' className='menu-icono' alt='Menu Icono'></img> : <Menu />}
-
         </div>
-);
+    );
 }

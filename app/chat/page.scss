@@ -5,22 +5,46 @@
   src: url('/fuentes/uno.ttf') format('opentype');
 }
 
-.archivo{
-  border:none;
-  background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
-    padding: 10px;
-    border-radius: 5px;
-    width: 106px;
-    margin: 0 auto; 
-display: flex;
-margin-left: 2px;
-margin-top: -588px;
-    box-shadow: 1px 1px 0.1px #0011ff13;
-   height: 560px; 
+.contenedor-chat-principal {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  box-sizing: border-box;
+}
+
+.envoltorio {
+  display: flex;
+  flex-direction: row;
+
+  height:  75vh;
+  padding: 0 4%;
+}
+
+.barra-lateral{
+  display: flex;
+  flex-direction: column;
+
+  width: 20%;
   
-   margin-bottom: 8px;
+  background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0.1px #0011ff13;
+  margin-right: 0.5%;
+}
 
+.barra-central {
+  display: flex;
+  flex-direction: column;
+  background-color: palevioletred;
 
+  height: 100%;
+  width: 78%;
+
+  background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
+  border-radius: 20px;
 }
 
 
@@ -29,30 +53,22 @@ margin-top: -588px;
 margin-left: 20px;
   font-family: 'uno';
   font-size: 13px;
-  margin-top: 330px;
 }
 
 
 .cartelera {
-border:none;
-background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
-  padding: 10px;
-  border-radius: 5px;
-  width: 1200px;
-  margin: 0 auto; 
+
+  height: 85%;
+  border: none;
+  background-image: linear-gradient(to top, rgb(248, 248, 248), rgba(243, 243, 250, 0.897));
+  border-radius: 10px; 
   overflow-y: scroll; 
-  margin-left: 130px;
-  box-shadow: 1px 1px 0.1px #0011ff13;
- height: 560px; 
-margin-top: -50px;
- margin-bottom: 8px;
 }
 
 
 .cartelera::-webkit-scrollbar {
-  width: 0.5em; 
+  width: 0.3em; 
   background-color: rgba(109, 109, 109, 0.315);
-
 }
 
 .cartelera::-webkit-scrollbar-thumb {
@@ -63,22 +79,31 @@ margin-top: -50px;
   border-radius: 5px;
 }
 
-  .BARRABUSQUEDACHAT input {
-    box-shadow: 1px 1px 0.1px #00000013;
+.BARRABUSQUEDACHAT {
+  display: flex;
+  flex-direction: row;
+
+  height: 15%;
+
+ 
+  box-sizing: border-box;
+  padding: 2%;
+
+}
+
+  .BARRABUSQUEDACHAT > input {
     display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+
     text-align: left; 
     align-items: center;
-    margin-top: 90px;
-    margin: 0 auto;
     color: $color-letra;
     border: none;
     border-radius: 4px;
-    height: 60px;
-    align-items: center;
-    background-color: rgb(241, 240, 240);
     font-family:'uno';
-    width: 850px;
-    margin-bottom: 289px;
 
     resize: vertical;
     overflow-y: auto;
@@ -125,18 +150,18 @@ margin-top: -50px;
   }
   
   .botonsito2{
-    display: flex;
+
+    width: 20%;
+
+
     background: none;
     border: none;
     border-radius: 3px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 20px;
-  margin-top: -323px;
-     margin-left: 1112px;
-     margin-bottom: 295px;
     background-color: rgb(0, 0, 0);
-     font-family: 'uno', sans-serif;
-     box-shadow: 1px 1px 0.1px #00000013;
+    font-family: 'uno', sans-serif;
+    box-shadow: 1px 1px 0.1px #00000013;
   }
 

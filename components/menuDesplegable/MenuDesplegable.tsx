@@ -32,7 +32,7 @@ export default function MenuDesplegable() {
             onClick={manejarClick}
             style={{
                 transition: menuBoton ? "none" : "width 0.5s ease-in-out",
-                width: menuBoton ? "5%" : "15%",
+                width: menuBoton ? "5%" : "10%",
                 position: menuBoton ? "inherit" : "fixed",
                 marginTop: "0px",
                 top: menuBoton ? "none" : "0px",

@@ -1,7 +1,6 @@
 'use client'
 import React, { ReactNode, use, useState } from 'react';
 import './page.scss';
-import Footer from '../../components/pie/PiePagina';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
 import verIArespuesta from '@/services/chat';
@@ -15,27 +14,22 @@ import enviarmensaje from "@/models/enviarmensaje"
 function Page() {
 
 
-let [textito,setTextito]=useState<string>("");
- let [elchat,setelchat]=useState<string[]>([]);
- let [mensajesAI,setmensajesAI]=useState<string[]>([]);
+  let [textito,setTextito]=useState<string>("");
+  let [elchat,setelchat]=useState<string[]>([]);
+  let [mensajesAI,setmensajesAI]=useState<string[]>([]);
+
+  function metermensajeAI () {
+
+    let todosmensajes:ReactNode[] = [];
 
 
- 
- 
-function metermensajeAI () {
-
-let todosmensajes:ReactNode[] = [];
-
-
-for (let i = 0; i < (elchat.length); i++) {
+    for (let i = 0; i < (elchat.length); i++) {
   
-    todosmensajes.push(<Mensajechat mensaje={elchat[i]} esAI={false} /> );
+        todosmensajes.push(<Mensajechat mensaje={elchat[i]} esAI={false} /> );
   
-  if (i < mensajesAI.length) {
-   todosmensajes.push(<Mensajechat mensaje={mensajesAI[i]} esAI={true} /> );
+      if (i < mensajesAI.length) {
+        todosmensajes.push(<Mensajechat mensaje={mensajesAI[i]} esAI={true} /> );
   }
-
-
 
   }/// por cada vuelta del bucle que meta uno del usuario y otro de la ia
 return todosmensajes;
@@ -71,19 +65,20 @@ setmensajesAI([...mensajesAI, mensajeAPI])
 
 
   return (
-    <div className="pepe">
+    <div className='contenedor-chat-principal'>
 
-  <FancyHeader/>
-      <div className='cartelera' >
-     
-       {metermensajeAI()}
-        
-      </div>
-      <div className='archivo'> <label className='archivolabel'>_____________ Archived chats </label> <Botonerachat/> </div>
+      <div className= 'envoltorio'>
 
+        <div className='barra-lateral'> 
+          <Botonerachat/> 
+        </div>
 
+        <div className = 'barra-central'>
+        <div className='cartelera' >
+          {metermensajeAI()}
+        </div> 
 
-      <div className="BARRABUSQUEDACHAT">
+        <div className="BARRABUSQUEDACHAT">
         <input
           type="text"
           maxLength={180}
@@ -94,9 +89,15 @@ setmensajesAI([...mensajesAI, mensajeAPI])
         <button className="botonsito2" onClick={ENVIARMENSAJE}>
           Send
         </button>
-      </div>
-      
+        </div> 
+
+
+
+        </div>
+
     </div>
+
+   </div>
   );
 }
 

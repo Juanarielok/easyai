@@ -37,21 +37,20 @@
       font-family: 'BAR'; 
       src: url('/fuentes/BarcodeFont.ttf') format('opentype'); 
     }
+
+
+.id-container {
+ height: 50px;
+ margin-right: 100px;
+}
    
       
-    .chrome {
-       
+.chrome {       
   color: #0000004d;
   font-size: 10px;
   font-family:'palanquinLight';
   text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 400px;
- 
-
- 
-
- 
+  text-transform: uppercase; 
 }
 
 

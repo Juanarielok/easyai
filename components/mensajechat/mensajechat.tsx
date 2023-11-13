@@ -20,15 +20,11 @@ const Mensajechat = ({ mensaje, esAI } : MensajechatProps) => {
     
   }
 
+  const [hora] = useState(new Date());
 
-
-
-  const [hora] = useState(new Date())
-
-
-
-
-  return (  <div>  <p className='IDhumana'>
+  return (  
+  <div>  
+    <p className='IDhumana'>
     <Id />  
   </p>
     <div className={nombredeclase()} > 

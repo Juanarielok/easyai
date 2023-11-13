@@ -11,9 +11,8 @@ const UniqueIdGenerator = () => {
   const [uniqueId] = useState(generateUniqueId());
 
   return (
-    <div >
-      <p className='chrome'>ID: {uniqueId}</p>
-      
+    <div className='id-container'>
+      <p className='chrome'>ID: {uniqueId}</p> 
     </div>
   );
 };

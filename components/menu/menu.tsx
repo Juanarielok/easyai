@@ -4,9 +4,7 @@ import Link from "next/link";
 import './menu.scss';
 import { link } from "fs";
 
-export default function Menu() {
-
-  
+export default function Menu() { 
 
 return(  
 

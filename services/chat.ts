@@ -7,12 +7,12 @@ import axios, { AxiosResponse } from "axios";
     
 
 
-function verIArespuesta(mensajetexto:string) : Promise<AxiosResponse<recibirmensaje>> {
+function verIArespuesta(mensajetexto:string, mensajesIA : string[],mensajesUsuario:string[]) : Promise<AxiosResponse<recibirmensaje>> {
   let mensajito: enviarmensaje = {
     input:  {
       text: mensajetexto,
-      generated_responses: [],
-      past_user_inputs: []
+      generated_responses: mensajesIA,
+      past_user_inputs: mensajesUsuario
     }
 
   }

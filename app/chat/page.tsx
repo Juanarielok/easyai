@@ -14,43 +14,44 @@ import enviarmensaje from "@/models/enviarmensaje"
 function Page() {
 
 
-  let [textito,setTextito]=useState<string>("");
-  let [elchat,setelchat]=useState<string[]>([]);
-  let [mensajesAI,setmensajesAI]=useState<string[]>([]);
+  let [textoInput, setTextoInput] = useState<string>("");
+  let [mensajesUsuario, setMensajesUsuario] = useState<string[]>([]);
+  let [mensajesAI, setmensajesAI] = useState<string[]>([]);
 
-  function metermensajeAI () {
+  function metermensajeAI() {
 
-    let todosmensajes:ReactNode[] = [];
+    let todosmensajes: ReactNode[] = [];
 
 
-    for (let i = 0; i < (elchat.length); i++) {
-  
-        todosmensajes.push(<Mensajechat mensaje={elchat[i]} esAI={false} /> );
-  
+    for (let i = 0; i < (mensajesUsuario.length); i++) {
+
+      todosmensajes.push(<Mensajechat mensaje={mensajesUsuario[i]} esAI={false} />);
+
       if (i < mensajesAI.length) {
-        todosmensajes.push(<Mensajechat mensaje={mensajesAI[i]} esAI={true} /> );
+        todosmensajes.push(<Mensajechat mensaje={mensajesAI[i]} esAI={true} />);
+      }
+
+    }/// por cada vuelta del bucle que meta uno del usuario y otro de la ia
+    return todosmensajes;
   }
 
-  }/// por cada vuelta del bucle que meta uno del usuario y otro de la ia
-return todosmensajes;
-}
 
 
+  function ENVIARMENSAJE() {
 
-function ENVIARMENSAJE () {
+    verIArespuesta(textoInput,mensajesAI,mensajesUsuario)
+      .then(function (respuesta: AxiosResponse<recibirmensaje>) {
 
-verIArespuesta(textito).then(function(respuesta:AxiosResponse<recibirmensaje>){
+        let respuestita: recibirmensaje = respuesta.data;
 
-let respuestita:recibirmensaje = respuesta.data ;
+        let mensajeAPI: string = respuestita.generated_text;
+        setmensajesAI([...mensajesAI, mensajeAPI])
+      })
 
-let mensajeAPI:string = respuestita.generated_text;
-setmensajesAI([...mensajesAI, mensajeAPI])
-})
+    setMensajesUsuario([...mensajesUsuario, textoInput]);
+    setTextoInput("")
 
-  setelchat([...elchat, textito]);
-  setTextito("")
-
-}
+  }
 
 
 
@@ -67,37 +68,37 @@ setmensajesAI([...mensajesAI, mensajeAPI])
   return (
     <div className='contenedor-chat-principal'>
 
-      <div className= 'envoltorio'>
+      <div className='envoltorio'>
 
-        <div className='barra-lateral'> 
-          <Botonerachat/> 
+        <div className='barra-lateral'>
+          <Botonerachat />
         </div>
 
-        <div className = 'barra-central'>
-        <div className='cartelera' >
-          {metermensajeAI()}
-        </div> 
+        <div className='barra-central'>
+          <div className='cartelera' >
+            {metermensajeAI()}
+          </div>
 
-        <div className="BARRABUSQUEDACHAT">
-        <input
-          type="text"
-          maxLength={180}
-          placeholder="How do I..."
-          value={textito}
-          onChange={(evento) => setTextito(evento.target.value)}
-        />
-        <button className="botonsito2" onClick={ENVIARMENSAJE}>
-          Send
-        </button>
-        </div> 
+          <div className="BARRABUSQUEDACHAT">
+            <input
+              type="text"
+              maxLength={180}
+              placeholder="How do I..."
+              value={textoInput}
+              onChange={(evento) => setTextoInput(evento.target.value)}
+            />
+            <button className="botonsito2" onClick={ENVIARMENSAJE}>
+              Send
+            </button>
+          </div>
 
 
 
         </div>
+
+      </div>
 
     </div>
-
-   </div>
   );
 }
 

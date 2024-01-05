@@ -1,5 +1,5 @@
 'use client'
-import React, { ReactNode, use, useState } from 'react';
+import React, { ChangeEvent, ReactNode, use, useEffect, useState } from 'react';
 import './page.scss';
 import Botonerachat from '../../components/botonerachat/botonerachat';
 import Mensajechat from '@/components/mensajechat/mensajechat';
@@ -10,6 +10,7 @@ import { AxiosResponse } from 'axios';
 import FancyHeader from '@/components/FancyHeader/FancyHeader';
 import recibirmensaje from "@/models/recibirmensaje"
 import enviarmensaje from "@/models/enviarmensaje"
+import guardarConversacion from '@/helpers/localStorageHelper';
 
 function Page() {
 
@@ -18,10 +19,12 @@ function Page() {
   let [mensajesUsuario, setMensajesUsuario] = useState<string[]>([]);
   let [mensajesAI, setmensajesAI] = useState<string[]>([]);
 
+  useEffect(() => {
+    guardarConversacion(mensajesAI, mensajesUsuario);
+  }, [mensajesUsuario, mensajesAI]);
+
   function metermensajeAI() {
-
     let todosmensajes: ReactNode[] = [];
-
 
     for (let i = 0; i < (mensajesUsuario.length); i++) {
 
@@ -45,14 +48,12 @@ function Page() {
         let respuestita: recibirmensaje = respuesta.data;
 
         let mensajeAPI: string = respuestita.generated_text;
-        setmensajesAI([...mensajesAI, mensajeAPI])
-      })
+        setmensajesAI([...mensajesAI, mensajeAPI]);
+      });
 
     setMensajesUsuario([...mensajesUsuario, textoInput]);
-    setTextoInput("")
-
+    setTextoInput("");
   }
-
 
 
 

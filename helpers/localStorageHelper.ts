@@ -1,3 +1,4 @@
+import Conversation from "@/models/Conversation";
 import { isString } from "lodash-es";
 
 const claveMensajesIA = 'mensajesia';
@@ -12,7 +13,7 @@ export function guardarConversacion(mensajesIA:string[],mensajesUsuario:string[]
     localStorage.setItem(claveMensajesUsuario, mensajesUsuariostring);
 }
 
-export function recuperarConversacion() {
+export function recuperarConversacion():Conversation {
     const mensajesIA = localStorage.getItem(claveMensajesIA);
     const mensajesUsuario = localStorage.getItem(claveMensajesUsuario);
 
@@ -21,11 +22,14 @@ export function recuperarConversacion() {
         let mensajesUsuarioArray = JSON.parse(mensajesUsuario);
 
         return {
-            mensajesIAarray,
-            mensajesUsuarioArray
+            generated_responses: mensajesIAarray,
+            past_user_inputs: mensajesUsuarioArray
         };
-    } else {
-        return {};
+    } 
+    
+    return {
+        generated_responses: [],
+        past_user_inputs: []
     }
 }
 

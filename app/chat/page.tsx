@@ -10,7 +10,7 @@ import { AxiosResponse } from 'axios';
 import FancyHeader from '@/components/FancyHeader/FancyHeader';
 import recibirmensaje from "@/models/recibirmensaje"
 import enviarmensaje from "@/models/enviarmensaje"
-import guardarConversacion from '@/helpers/localStorageHelper';
+import guardarConversacion, { recuperarConversacion } from '@/helpers/localStorageHelper';
 
 function Page() {
 
@@ -22,6 +22,21 @@ function Page() {
   useEffect(() => {
     guardarConversacion(mensajesAI, mensajesUsuario);
   }, [mensajesUsuario, mensajesAI]);
+
+  useEffect(() => {
+
+const recuperacion = recuperarConversacion() 
+
+setMensajesUsuario (recuperacion.past_user_inputs)
+setmensajesAI(recuperacion.generated_responses)
+
+
+    // Aqui va el codigo que se va a ejecutar al cargar la pagina.
+    // Tienes que poner que se cargue la conversacion que hemos guardado
+
+    // la funcion devuelve un objeto con los mensajes de la IA y los del usuario. 
+    // Tienes que guardarlos en las variables mensajesAI y mensajesUsuario para que se vean en la pantalla
+  }, []);
 
   function metermensajeAI() {
     let todosmensajes: ReactNode[] = [];
@@ -64,7 +79,14 @@ function Page() {
 
 
 
-
+/**
+ * Boton para borrar la conversacion
+ * 
+ * borrar la conversacion consiste en cambiar los mensajes de IA (mensajesAI) 
+ * y los del usuario (mensajesUsuario) a array vacios. 
+ * 
+ * El metodo tiene que llamar a una funcion que haga eso.
+ */
 
   return (
     <div className='contenedor-chat-principal'>

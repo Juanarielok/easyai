@@ -57,12 +57,12 @@ setmensajesAI(recuperacion.generated_responses)
 
   function ENVIARMENSAJE() {
 
-    verIArespuesta(textoInput,mensajesAI,mensajesUsuario)
+    verIArespuesta(textoInput)
       .then(function (respuesta: AxiosResponse<recibirmensaje>) {
 
         let respuestita: recibirmensaje = respuesta.data;
 
-        let mensajeAPI: string = respuestita.generated_text;
+        let mensajeAPI: string = respuestita.RespuestaIA;
         setmensajesAI([...mensajesAI, mensajeAPI]);
       });
 

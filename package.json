@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "concurrently \"next dev\" \"mockserver -p 8080 -m mockserver\"",
     "dev-backend": "env-cmd -f ./.env.dev-backend next dev",
+    "dev-backend-local": "env-cmd -f ./.env.dev-backend-local next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

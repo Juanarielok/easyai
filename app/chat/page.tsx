@@ -19,8 +19,13 @@ function Page() {
       .then(function (respuesta: AxiosResponse<recibirmensaje>) {
         let mensajeIA: string = respuesta?.data?.respuestaIA;
 
-        setMensajes([...mensajes, <Mensajechat mensaje={mensajeUsuario} esAI={false} />]);
-        setMensajes([...mensajes, <Mensajechat mensaje={mensajeIA} esAI={true} />]);
+        setMensajes(
+          [
+            ...mensajes, 
+            <Mensajechat mensaje={mensajeUsuario} esAI={false} />, 
+            <Mensajechat mensaje={mensajeIA} esAI={true} />
+          ]
+        );
       });
   }
 

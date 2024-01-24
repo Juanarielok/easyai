@@ -4,7 +4,7 @@ import Id from '@/components/id';
 
 
 interface MensajechatProps {
-  mensaje: string,
+  mensaje: string | undefined,
   esAI: boolean 
 }
 

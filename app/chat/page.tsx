@@ -62,7 +62,7 @@ setmensajesAI(recuperacion.generated_responses)
 
         let respuestita: recibirmensaje = respuesta.data;
 
-        let mensajeAPI: string = respuestita.RespuestaIA;
+        let mensajeAPI: string = respuestita.respuestaUsuario;
         setmensajesAI([...mensajesAI, mensajeAPI]);
       });
 

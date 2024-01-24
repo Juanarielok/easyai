@@ -1,14 +1,6 @@
-import Conversation from "./Conversation"
-
-
-
-export interface recibirmensaje{
-
-    generated_text: string,
-    
-    conversation: Conversation 
-
-
+export interface recibirmensaje {
+    respuestaIA: string,
+    respuestaUsuario: string
 }
 
 export default recibirmensaje

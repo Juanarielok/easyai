@@ -1,9 +1,5 @@
-import Conversation from "./Conversation"
-
-
-
 export interface enviarmensaje {
-      text: string
+      mensaje: string
 }
 
 

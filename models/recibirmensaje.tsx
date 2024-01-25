@@ -1,7 +1,6 @@
-import Conversation from "./Conversation";
-
 export interface recibirmensaje {
-  respuesta: string;
+  respuestaIA: string,
+  respuestaUsuario: string
 }
 
 export default recibirmensaje;

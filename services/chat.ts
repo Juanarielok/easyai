@@ -12,7 +12,8 @@ function verIArespuesta(mensajetexto:string) : Promise<AxiosResponse<recibirmens
       mensaje: mensajetexto,
   };
   
-  return axios.post<recibirmensaje>(process.env.NEXT_PUBLIC_BACKEND_URL + '/chat',
+  return axios.post<recibirmensaje>(
+    process.env.NEXT_PUBLIC_BACKEND_URL + '/chat',
     mensaje
   );
 }

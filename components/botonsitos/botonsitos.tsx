@@ -1,14 +1,10 @@
-
-
-'use client'
+"use client";
 
 import Link from "next/link";
-import './botonsitos.scss';
+import "./botonsitos.scss";
 import { useState } from "react";
 
 export default function botonsitos() {
-
-
   const [hovered1, setHovered1] = useState(false);
   const [hovered2, setHovered2] = useState(false);
   const [hovered3, setHovered3] = useState(false);
@@ -46,75 +42,39 @@ export default function botonsitos() {
     setHovered4(false);
   };
 
-
   return (
-
-
-
-
-
-
-
     <div className="BOTONSITOS">
-
-      
-
-      <Link className='link4' href="/Login">
-
-
+      <Link className="link4" href="/Login">
         <img
-          className='iraudio'
+          className="iraudio"
           src={hovered1 ? "/icons/AUDIO.png" : "/icons/AUDIO.png"}
           onMouseOver={handleMouseOver1}
           onMouseOut={handleMouseOut1}
         />
 
-
-{hovered1 && <div className='text02'>Artificial audio</div>}
-
+        {hovered1 && <div className="text02">Artificial audio</div>}
       </Link>
 
-      <Link className='linkimagen' href="/Login">
-
-
+      <Link className="linkimagen" href="/imagen">
         <img
-          className='irimagen'
+          className="irimagen"
           src={hovered2 ? "/icons/picture1A.svg" : "/icons/picture100.svg"}
           onMouseOver={handleMouseOver2}
           onMouseOut={handleMouseOut2}
         />
-{hovered2 && <div className='text0'>Generate pic</div>}
-
-
-
+        {hovered2 && <div className="text0">Generate pic</div>}
       </Link>
 
-      <Link className='link2' href="/chat">
-
-
+      <Link className="link2" href="/chat">
         <img
-          className='irchat'
+          className="irchat"
           src={hovered3 ? "/icons/CHATT.png" : "/icons/CHATT.png"}
           onMouseOver={handleMouseOver3}
           onMouseOut={handleMouseOut3}
         />
 
-{hovered3 && <div className='text01'>Go chat</div>}
-
-
+        {hovered3 && <div className="text01">Go chat</div>}
       </Link>
-
-
-
-
-
-
-
     </div>
-  )
-
-
-
-
-
-};
+  );
+}

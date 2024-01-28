@@ -16,6 +16,7 @@ export default function RootLayout({
 
   const clases : { [key: string]: string; } = {
 "/chat": "chatear",
+"/imagen": "Generar Imagen",
 "/": "body",
 "/register": "registrar",
 "/Login": "loguear",

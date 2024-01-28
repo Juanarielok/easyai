@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../../public/fuentes/MonaSans/MonaSans-ExtraBold.woff2');
+}
+
+@font-face {
+    font-family: 'MonaSansLight';
+    src: url('../../public/fuentes/MonaSans/MonaSans-Light.woff2');
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .titulo {
+        font-size: 3dvh;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titulo {
+    font-family: 'MonaSans';
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    color: white;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 40%;
+}
+
+.inputMensaje {
+    height: 20dvh;
+    width: 100%;
+
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'MonaSansLight';
+    font-size: 24px;
+}
+
+.botonGenerarImagen {
+    height: 5dvh;
+    width: 100%;
+
+    border-radius: 8px;
+    border: none;
+}
+
+.contenedorImagen {
+    position: relative;
+    display: flex;
+    height: 80dvh;
+    width: 60%;
+
+    background-color: rgba(255, 255, 255, 0.191);
+
+    margin-left: 2%;
+    border: none; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}

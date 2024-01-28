@@ -1,44 +1,45 @@
-'use client'
-import { ReactNode, useState } from 'react';
-import './page.scss';
-import Botonerachat from '../../components/botonerachat/botonerachat';
-import Mensajechat from '@/components/mensajechat/mensajechat';
-import verIArespuesta from '@/services/chat';
-import { AxiosResponse } from 'axios';
+"use client";
+import { ReactNode, useState } from "react";
+import "./page.scss";
+import Botonerachat from "../../components/botonerachat/botonerachat";
+import Mensajechat from "@/components/mensajechat/mensajechat";
+import verIArespuesta from "@/services/chat";
+import textoToAudio from "@/services/textoToAudio";
+import { AxiosResponse } from "axios";
 import recibirmensaje from "@/models/recibirmensaje";
+import fs from "fs";
+import path from "path";
 
 function Page() {
   let [textoInput, setTextoInput] = useState<string>("");
   let [mensajes, setMensajes] = useState<ReactNode[]>([]);
 
+
   function ENVIARMENSAJE() {
     const mensajeUsuario = textoInput;
     setTextoInput("");
 
-    verIArespuesta(textoInput)
-      .then(function (respuesta: AxiosResponse<recibirmensaje>) {
-        let mensajeIA: string = respuesta?.data?.respuestaIA;
+    verIArespuesta(textoInput).then(function (
+      respuesta: AxiosResponse<recibirmensaje>
+    ) {
+      let mensajeIA: string = respuesta?.data?.respuestaIA;
 
-        setMensajes(
-          [
-            ...mensajes, 
-            <Mensajechat mensaje={mensajeUsuario} esAI={false} />, 
-            <Mensajechat mensaje={mensajeIA} esAI={true} />
-          ]
-        );
-      });
+      setMensajes([
+        ...mensajes,
+        <Mensajechat mensaje={mensajeUsuario} esAI={false} />,
+        <Mensajechat mensaje={mensajeIA} esAI={true} />,
+      ]);
+    });
   }
 
   return (
-    <div className='contenedor-chat-principal'>
-      <div className='envoltorio'>
-        <div className='barra-lateral'>
+    <div className="contenedor-chat-principal">
+      <div className="envoltorio">
+        <div className="barra-lateral">
           <Botonerachat />
         </div>
-        <div className='barra-central'>
-          <div className='cartelera' >
-            {mensajes}
-          </div>
+        <div className="barra-central">
+          <div className="cartelera">{mensajes}</div>
           <div className="BARRABUSQUEDACHAT">
             <input
               type="text"

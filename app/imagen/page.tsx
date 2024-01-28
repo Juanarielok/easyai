@@ -44,8 +44,7 @@ export default function Page(): ReactNode {
       <hr />
       <div className={imagen.main}>
         <form onSubmit={manejarEnvio} className={imagen.forma}>
-          <input
-            type="text"
+          <textarea
             name="mensaje"
             className={imagen.inputMensaje}
             value={descripcion === "GENERAR IMÁGENES" ? "" : descripcion}

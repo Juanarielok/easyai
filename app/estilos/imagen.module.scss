@@ -1,18 +1,21 @@
 @font-face {
     font-family: 'MonaSans';
-    src: url('../../public/fuentes/MonaSans/MonaSans-ExtraBold.woff2');
+    src: url('/fuentes/MonaSans/MonaSans-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'MonaSansLight';
-    src: url('../../public/fuentes/MonaSans/MonaSans-Light.woff2');
+    src: url('/fuentes/MonaSans/MonaSans-Light.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'MonaSansExtraLight';
+    src: url('/fuentes/MonaSans/MonaSans-ExtraLight.woff2') format('woff2');
+}
 
 @media screen and (min-width: 768px) {
-
     .titulo {
-        font-size: 3dvh;
+        font-size: 3vh;
     }
 }
 
@@ -27,50 +30,63 @@
     font-family: 'MonaSans';
     font-size: 2rem;
     letter-spacing: -0.01em;
-
     margin-left: 5%;
     margin-right: 5%;
-
-    color: white;
+    color: #5a5d71;
 }
 
 .forma {
     display: flex;
     flex-direction: column;
-
-
+    align-items: center;
     width: 40%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(91, 94, 113, 0.458) 2%, rgba(91, 94, 113, 0.505) 49%, rgba(28, 28, 33, 0.489) 88%);
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 1rem;
 }
 
 .inputMensaje {
-    height: 20dvh;
+    height: 12rem;
     width: 100%;
-
-    border-radius: 8px;
+    border-radius: 20px;
     border: none;
-
+    padding: 0.5rem;
     font-family: 'MonaSansLight';
-    font-size: 24px;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+}
+
+.inputMensaje:focus {
+    border: 0px;
+    outline: none;
 }
 
 .botonGenerarImagen {
-    height: 5dvh;
-    width: 100%;
-
-    border-radius: 8px;
+    height: 5rem;
+    width: 80%;
+    border-radius: 20px;
     border: none;
+    font-size: 1.5rem;
+    font-family: 'MonaSansLight';
+    background: linear-gradient(90deg, hsla(232, 11%, 40%, 1) 0%, hsla(236, 19%, 44%, 1) 0%, hsla(240, 58%, 30%, 1) 86%);
+    color: white;
+}
+
+.botonGenerarImagen:hover {
+    box-shadow: 0px 0px 10px 1px rgba(128, 0, 128, 0.582);
+    cursor: pointer;
 }
 
 .contenedorImagen {
     position: relative;
     display: flex;
-    height: 80dvh;
+    height: 80vh;
     width: 60%;
-
     background-color: rgba(255, 255, 255, 0.191);
-
     margin-left: 2%;
-    border: none; 
-    border-radius: 10px; 
-    overflow: hidden; 
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
 }

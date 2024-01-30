@@ -5,34 +5,29 @@ import imagen from "../estilos/imagen.module.scss";
 import generarTitulo from "./utilidades/generarTitulo";
 import generarImagen from "@/services/generarImagen";
 import Image from "next/image";
+import Button from "@mui/material/Button";
+import { TextareaAutosize } from "@mui/material";
+import BarraBusqueda from "./subcomponentes/BarraBusqueda";
 
 export default function Page(): ReactNode {
   const [titulo, setTitulo] = useState<string[]>([]);
   const [descripcion, setDescripcion] = useState<string>("GENERAR IMÁGENES");
   const [nuevaImagen, setNuevaImagen] = useState<string>("");
 
-  async function manejarEnvio(event: React.FormEvent) {
-    event.preventDefault();
+  const getImageUrl = async (prompt: string, titulo: string): Promise<void> => {
+    let nuevoTitulo = titulo.split("");
 
-    const generarNuevaImagen = async (): Promise<string> => {
-      const respuesta = await generarImagen(descripcion);
-      const data = respuesta.data;
-      return data;
-    };
-
-    generarNuevaImagen()
-      .then((nuevaImagen) => {
-        setNuevaImagen(nuevaImagen);
-      })
-      .catch((error) => {
-        console.error("Error para generar la imagen", error);
-      });
-
-    let nuevoTitulo = descripcion.split("");
     generarTitulo(nuevoTitulo, setTitulo);
+
     setTitulo(new Array(0));
-    setDescripcion("");
-  }
+
+    const respuesta = await generarImagen(prompt);
+
+    const imagenUrl = respuesta.data;
+
+    setNuevaImagen(imagenUrl);
+
+  };
 
   useEffect(() => {
     generarTitulo(descripcion.split(""), setTitulo);
@@ -41,24 +36,8 @@ export default function Page(): ReactNode {
   return (
     <>
       <h1 className={imagen.titulo}>{titulo}</h1>
-      <hr />
+      <hr className={imagen.linea}/>
       <div className={imagen.main}>
-        <form onSubmit={manejarEnvio} className={imagen.forma}>
-          <textarea
-            name="mensaje"
-            className={imagen.inputMensaje}
-            value={descripcion === "GENERAR IMÁGENES" ? "" : descripcion}
-            required
-            placeholder="Un cuadro impresionista"
-            onChange={(event) => {
-              setDescripcion(event.target.value);
-            }}
-          />
-          <button type="submit" className={imagen.botonGenerarImagen}>
-            Generar Imagen
-          </button>
-        </form>
-
         <div className={imagen.contenedorImagen}>
           {nuevaImagen && (
             <Image
@@ -71,6 +50,7 @@ export default function Page(): ReactNode {
           )}
         </div>
       </div>
+      <BarraBusqueda getImageUrl={getImageUrl} />
     </>
   );
 }

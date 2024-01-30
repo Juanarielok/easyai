@@ -14,8 +14,9 @@ function Page() {
   let [textoInput, setTextoInput] = useState<string>("");
   let [mensajes, setMensajes] = useState<ReactNode[]>([]);
 
+  function ENVIARMENSAJE(event: React.FormEvent) {
+    event.preventDefault();
 
-  function ENVIARMENSAJE() {
     const mensajeUsuario = textoInput;
     setTextoInput("");
 
@@ -40,18 +41,19 @@ function Page() {
         </div>
         <div className="barra-central">
           <div className="cartelera">{mensajes}</div>
-          <div className="BARRABUSQUEDACHAT">
+          <form className="BARRABUSQUEDACHAT" onSubmit={ENVIARMENSAJE}>
             <input
               type="text"
               maxLength={180}
               placeholder="How do I..."
               value={textoInput}
               onChange={(evento) => setTextoInput(evento.target.value)}
+              className="Barrabusqueda-input"
             />
-            <button className="botonsito2" onClick={ENVIARMENSAJE}>
+            <button type="submit" className="botonsito2">
               Send
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

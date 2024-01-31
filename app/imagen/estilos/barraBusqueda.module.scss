@@ -35,19 +35,20 @@
 .forma {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2%;
 
     width: 100%;
     height: 80%;
 
-    margin-right: 5%;
-    margin-left: 5%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 1%;
-
-    gap: 2rem;
 }
 
 .contenedorBusqueda {
-    width: 70%;
+    flex-grow: 1;
     height: 5rem;
 
     border: none;
@@ -58,11 +59,12 @@
     font-size: 1rem;
 }
 
-.contenedorBusqueda[text] {
-    margin-right: 5px;
+.selectorModelo {
+    flex-grow: 0.2;
 }
 
 .enviarBoton {
+    flex-grow: 0;
     background-color: #341948;
 
     font-weight: bold;

@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import Button from "@mui/material/Button";
+import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import barraBusqueda from "../estilos/barraBusqueda.module.scss";
 
 type BarraBusquedaProps = {
@@ -36,6 +37,26 @@ export default function BarraBusqueda({
           required
         />
 
+        <div className={barraBusqueda.selectorModelo}>
+          <FormControl
+            sx={{ m: 1, minWidth: 30 }}
+            size="small"
+            fullWidth={true}
+          >
+            <InputLabel id="modelo-etiqueta">Modelo</InputLabel>
+            <Select
+              labelId="selector-etiqueta"
+              id="selector-etiqueta"
+              value="43"
+              label="Age"
+              required
+            >
+              <MenuItem>Dalle-3</MenuItem>
+              <MenuItem>Prodia</MenuItem>
+            </Select>
+          </FormControl>
+        </div>
+
         <Button
           variant="contained"
           type="submit"
@@ -44,12 +65,6 @@ export default function BarraBusqueda({
           Generar Imagen
         </Button>
       </form>
-
-      <label>Elige tu modelo preferido: </label>
-      <select>
-        <option>Dalle-2</option>
-        <option>Prodia</option>
-      </select>
     </div>
   );
 }

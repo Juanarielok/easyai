@@ -14,6 +14,26 @@
     src: url('/fuentes/MonaSans/MonaSans-ExtraLight.woff2') format('woff2');
 }
 
+@media screen and (max-width: 640) {
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 800) {
+    .titulo {
+        font-size: 80px;
+    }
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
     .titulo {
         font-size: 3vh;

@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useState, useEffect } from "react";
-import imagen from "../estilos/imagen.module.scss";
+import imagen from "./estilos/imagen.module.scss";
 import generarTitulo from "./utilidades/generarTitulo";
 import generarImagen from "@/services/generarImagen";
 import Image from "next/image";
@@ -26,7 +26,6 @@ export default function Page(): ReactNode {
     const imagenUrl = respuesta.data;
 
     setNuevaImagen(imagenUrl);
-
   };
 
   useEffect(() => {
@@ -36,7 +35,7 @@ export default function Page(): ReactNode {
   return (
     <>
       <h1 className={imagen.titulo}>{titulo}</h1>
-      <hr className={imagen.linea}/>
+      <hr className={imagen.linea} />
       <div className={imagen.main}>
         <div className={imagen.contenedorImagen}>
           {nuevaImagen && (

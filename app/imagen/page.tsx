@@ -14,14 +14,18 @@ export default function Page(): ReactNode {
   const [descripcion, setDescripcion] = useState<string>("GENERAR IMÁGENES");
   const [nuevaImagen, setNuevaImagen] = useState<string>("");
 
-  const getImageUrl = async (prompt: string, titulo: string): Promise<void> => {
+  const getImageUrl = async (
+    prompt: string,
+    titulo: string,
+    modelo: string
+  ): Promise<void> => {
     let nuevoTitulo = titulo.split("");
 
     generarTitulo(nuevoTitulo, setTitulo);
 
     setTitulo(new Array(0));
 
-    const respuesta = await generarImagen(prompt);
+    const respuesta = await generarImagen(prompt, modelo);
 
     const imagenUrl = respuesta.data;
 

@@ -1,23 +1,28 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import barraBusqueda from "../estilos/barraBusqueda.module.scss";
 
 type BarraBusquedaProps = {
-  getImageUrl: (prompt: string, titulo: string) => Promise<void>;
+  getImageUrl: (
+    prompt: string,
+    titulo: string,
+    modelo: string
+  ) => Promise<void>;
 };
 
 export default function BarraBusqueda({
   getImageUrl,
 }: BarraBusquedaProps): ReactNode {
   const [prompt, setPrompt] = useState<string>("");
+  const [modelo, setModelo] = useState<string>("");
 
   function manejarEnvio(event: React.FormEvent) {
     event.preventDefault();
 
     let mensajePrompt = prompt;
 
-    getImageUrl(mensajePrompt, mensajePrompt);
+    getImageUrl(mensajePrompt, mensajePrompt, modelo.toLowerCase());
 
     setPrompt("");
   }
@@ -39,7 +44,7 @@ export default function BarraBusqueda({
 
         <div className={barraBusqueda.selectorModelo}>
           <FormControl
-            sx={{ m: 1, minWidth: 30 }}
+            sx={{ m: 1, minWidth: 30, minHeight: 50 }}
             size="small"
             fullWidth={true}
           >
@@ -47,12 +52,15 @@ export default function BarraBusqueda({
             <Select
               labelId="selector-etiqueta"
               id="selector-etiqueta"
-              value="43"
-              label="Age"
+              value={modelo}
+              label="Modelo"
+              onChange={(event) => {
+                setModelo(event.target.value);
+              }}
               required
             >
-              <MenuItem>Dalle-3</MenuItem>
-              <MenuItem>Prodia</MenuItem>
+              <MenuItem value="Dalle-3">Dalle-3</MenuItem>
+              <MenuItem value="Prodia">Prodia</MenuItem>
             </Select>
           </FormControl>
         </div>

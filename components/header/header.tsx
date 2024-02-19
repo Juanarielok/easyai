@@ -1,16 +1,14 @@
-'use client'
+"use client";
 
 import Logo from "../logo/logo";
-import './header.scss'
+import header from './header.module.scss';
 import MenuDesplegable from "../menuDesplegable/MenuDesplegable";
 
-export default function header() {
-
-    return(  
-          <div className="encabezado-estilo"> 
-               <Logo/> 
-                    {/* El componente Menu se quito y se debe colocar dentro del nuevo componente MenuDesplegable. */}
-               <MenuDesplegable /> 
-          </div>
-   )};
-    
+export default function Header() {
+  return (
+    <div className={header.encabezado}>
+      <Logo />
+      <MenuDesplegable />
+    </div>
+  );
+}

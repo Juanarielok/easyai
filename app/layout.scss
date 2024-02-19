@@ -12,69 +12,75 @@
   font-stretch: 10%;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-image: url("/icons/background1.jpg");
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    animation: fadeIn 1s ease-in-out;
-    opacity: 1;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
 
 }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
 
-body.chatear{
+  100% {
+    opacity: 1;
+  }
+}
+
+
+body.chatear {
   background-image: url("/icons/fac4.jpg");
-    background-size:cover;
+  background-size: cover;
 }
 
-body.registrar{
-
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-body.loguear{
-
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-}
-body.acerca{
-  
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-
-}
-
-body.contacto{
+body.registrar {
 
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body.loguear {
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body.acerca {
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+body.contacto {
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   min-height: 100vh;
   margin: 0;

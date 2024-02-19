@@ -1,18 +1,15 @@
-'use client'
+"use client";
 
-
-import Botonsitos from '../components/botonsitos/botonsitos'
-import React from 'react';
-import './page.scss';
+import Botonsitos from "../components/botonsitos/botonsitos";
+import Titulo from "@/components/titulo/Titulo";
+import React from "react";
+import "./page.scss";
 
 export default function App() {
   return (
-
-    <div className="App">
-
-      <label className="marquesina"> Choose the AI ​​tool you need today </label>
+    <main className="App">
+      <Titulo />
       <Botonsitos />
-      
-    </div>
+    </main>
   );
 }

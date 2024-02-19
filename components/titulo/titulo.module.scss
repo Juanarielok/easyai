@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'MonaSansExtraBold';
+    src: url('../../public/fuentes/MonaSans/MonaSans-ExtraBold.woff2');
+    font-weight: 900;
+    font-stretch: 75%;
+    width: 75;
+}
+
+@keyframes Opacidad {
+    0% {
+        opacity: 0;
+        color: black;
+    }
+
+    20% {
+        opacity: 0.3;
+        color: rgba(0, 0, 0, 0.467);
+    }
+
+    50% {
+        opacity: 0.5;
+        color: white;
+    }
+
+    70% {
+        opacity: 0.8;
+        color: rgba(253, 62, 62, 0.511);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow:
+            1px 0px #ff0055,
+            -1px 0px #ff0055,
+            0px 1px #ff0055,
+            0px -1px #ff0055,
+            1px 1px #ff0055,
+            -1px 1px #ff0055,
+            1px -1px #ff0055,
+            -1px -1px #ff0055,
+            2px 0px #646464,
+            -2px 0px #646464,
+            0px 2px #646464,
+            0px -2px #646464,
+            2px 2px #646464,
+            -2px 2px #646464,
+            2px -2px #646464,
+            -2px -2px #646464;
+        color: transparent;
+    }
+}
+
+
+.contenedor {
+    min-height: 10rem;
+    width: 80%;
+
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+
+    font-family: 'uno';
+    font-size: 1rem;
+
+}
+
+.banner {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.eslogan-activo {
+    margin-top: -100px;
+    font-family: "MonaSansExtraBold";
+    font-size: 3rem;
+    font-variation-settings: "ital"10;
+
+}

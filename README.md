@@ -33,9 +33,9 @@ If you share our mission on democratizing all the tools that AI has to offer us,
 
 | Creator        | Role                      | GitHub Profile  |
 | -------------- | --------------------------|----------------- |
-| Pablo          | Senior Front-End Developer| [Pablo](https://github.com/pablo-alm)
+| Pablo          | Senior Front-End Developer|                                        |
 | Juan           | Front-End Developer       | [Juan](https://github.com/Juanarielok) |
-| José David     | Full-Stack Developer      | [José David](https://github.com/B4LSEROS) |
+| Jordan Dyke     | Full-Stack Developer      |                                       |
                     
 
 
